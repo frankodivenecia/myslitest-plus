@@ -1,0 +1,3 @@
+{{- if and hugo.IsProduction site.Params.umamiWebsiteId -}}
+<script defer src="{{ site.Params.umamiScript }}" data-website-id="{{ site.Params.umamiWebsiteId }}"></script>
+{{- end -}}

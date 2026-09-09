@@ -1,0 +1,6 @@
+# Generated site. Hugo builds it in CI, it does not belong in the repository.
+/public/
+# Directories for the local preview and Hugo's working files.
+/build/
+/resources/
+.hugo_build.lock

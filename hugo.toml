@@ -1,0 +1,26 @@
+# The site is built from content/: predmet/<subject>/<card>/_index.md holds the
+# questions, the files next to it the answers. Numbers, block codes and counts
+# are computed by the templates.
+# Links are relative to the page, so the site address does not matter.
+baseURL = "/"
+locale = "cs-CZ"
+title = "Myslitest"
+
+relativeURLs = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "rss", "sitemap", "404"]
+
+# Typography is set by the typography.html partial; Goldmark would impose its
+# own. Answer headings are nothing to link to, so they get no anchors.
+[markup.goldmark.extensions.typographer]
+  disable = true
+[markup.goldmark.parser]
+  autoHeadingID = false
+
+[params]
+  editBase = "https://gitlab.com/panjan/myslitest/-/edit/master/content"
+  email = "hi@honza.me"
+  # Umami Cloud: paste the website ID from the tracking code, otherwise no
+  # script is emitted. Only production builds are counted, not local ones.
+  umamiWebsiteId = "4018208c-ad3a-4276-b2c5-053783969dcb"
+  umamiScript = "https://cloud.umami.is/script.js"

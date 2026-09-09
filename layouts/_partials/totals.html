@@ -1,0 +1,10 @@
+{{- /* Totals for the home page: questions from every subject, cards only from
+those that are divided into cards. */ -}}
+{{- $subjects := partial "subjects.html" . -}}
+{{- $questions := 0 -}}
+{{- $cards := 0 -}}
+{{- range $subjects -}}
+  {{- $questions = add $questions .questions -}}
+  {{- if eq .page.Params.part "karta" }}{{ $cards = add $cards (len .cards) }}{{ end -}}
+{{- end -}}
+{{- return (dict "questions" $questions "cards" $cards "subjects" (len $subjects)) -}}

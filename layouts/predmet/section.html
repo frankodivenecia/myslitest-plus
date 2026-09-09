@@ -1,0 +1,23 @@
+{{ define "title" }}{{ partial "plain.html" .Title }} — Myslitest{{ end }}
+{{- define "description" -}}
+  {{- $subject := partial "subject.html" . -}}
+  {{- $name := partial "plain.html" .Title -}}
+  {{- if eq .Params.part "okruh" -}}
+    Předmět {{ $subject.roman }}: {{ $name }}. {{ $subject.questions }} otázek v {{ len $subject.cards }} okruzích.
+  {{- else -}}
+    Předmět {{ $subject.roman }}: {{ $name }}. {{ len $subject.cards }} karet, {{ $subject.questions }} otázek.
+  {{- end -}}
+{{- end -}}
+{{ define "main" }}
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Předměty</a></p>
+  <h1 class="page-title">{{ partial "inline.html" (dict "page" . "text" .Title) }}</h1>
+  <ul class="grid">
+{{- $slug := path.Base .File.Dir }}
+{{- range partial "cards.html" . }}
+<li data-card="{{ $slug }}/{{ .part }}" data-questions="{{ .count }}"><a href="{{ .page.RelPermalink }}">
+  <div class="card-number">{{ .number }}</div>
+  <ul>{{ range partial "blocks.html" .page }}<li>{{ partial "inline.html" (dict "page" $ "text" .heading) }}</li>{{ end }}</ul>
+</a></li>
+{{- end }}
+  </ul>
+{{ end }}

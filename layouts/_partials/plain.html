@@ -1,0 +1,2 @@
+{{- /* Text for <title> and the meta description: no links, no typography. */ -}}
+{{- return (replaceRE `\[([^\]]+)\]\([^)]+\)` "${1}" .) -}}

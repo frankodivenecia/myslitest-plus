@@ -1,0 +1,8 @@
+{{- /* The question the page answers: the one standing at its place on the card. */ -}}
+{{- $position := partial "position.html" . -}}
+{{- $questions := (index (partial "blocks.html" .Parent) $position.block).questions -}}
+{{- $question := "" -}}
+{{- if lt $position.index (len $questions) -}}
+  {{- $question = index $questions $position.index -}}
+{{- end -}}
+{{- return (replaceRE `\[(.*)\]\(.*\)` "${1}" $question) -}}

@@ -1,0 +1,52 @@
+{{- define "title" -}}
+  {{ strings.TrimSuffix "." (partial "plain.html" (partial "question.html" .)) }} — Myslitest
+{{- end -}}
+{{- define "description" }}{{ with .Params.description }}{{ . }}{{ else }}Odpověď na tuto otázku zatím chybí.{{ end }}{{ end -}}
+{{ define "main" }}
+{{- $subject := partial "subject.html" . -}}
+{{- $card := partial "card.html" . -}}
+{{- $single := eq $subject.page.Params.part "okruh" -}}
+{{- $label := printf "%s %d" (cond $single "Okruh" "Karta") $card.number -}}
+{{- $position := partial "position.html" . -}}
+{{- $urls := partial "elsewhere.html" .Parent -}}
+{{- $elsewhere := index $urls (cond $single $position.ordinal $position.block) -}}
+{{- $parts := split (trim .RawContent "\n") "\n## Zdroje\n" -}}
+{{- $body := partial "inline.html" (dict "page" . "text" (index $parts 0) "block" true) -}}
+{{- $body = replaceRE `^<p>` `<p class="summary">` $body -}}
+{{- $sources := slice -}}
+{{- if gt (len $parts) 1 -}}
+  {{- range (split (index $parts 1) "\n") -}}
+    {{- $line := trim . " " -}}
+    {{- if findRE `^\d+\. ` $line -}}
+      {{- $sources = $sources | append (replaceRE `^\d+\. ` "" $line) -}}
+    {{- else if and $line (gt (len $sources) 0) -}}
+      {{- $last := index $sources (sub (len $sources) 1) -}}
+      {{- $sources = (first (sub (len $sources) 1) $sources) | append (printf "%s %s" $last $line) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end }}
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Předměty</a> / <a href="{{ $subject.page.RelPermalink }}">{{ partial "inline.html" (dict "page" . "text" $subject.page.Title) }}</a> / <a href="{{ $card.page.RelPermalink }}">{{ $label }}</a></p>
+  <article class="answers">
+  <section class="answer">
+    <h1>{{ partial "inline.html" (dict "page" . "text" (partial "question.html" .)) }}</h1>
+
+{{ if and $body .Params.unreviewed }}
+    <p class="unreviewed">Tuto odpověď napsala umělá inteligence a zatím ji neověřil člověk. Buďte první, kdo ji ověří — <a href="{{ site.Params.editBase }}/{{ .File.Path }}" target="_blank" rel="noopener">upravte ji zde</a>.</p>
+{{ end }}
+{{ if $body }}{{ $body | safeHTML }}{{ else }}
+    <p class="missing">Odpověď zatím chybí. <a href="{{ site.Params.editBase }}/{{ .File.Path }}" target="_blank" rel="noopener">Napište ji</a> — stačí pár vět a pod ně zdroje, ze kterých jste čerpali.</p>
+{{ end }}
+  </section>
+{{ with $sources }}
+  <section class="sources">
+    <h2>Zdroje</h2>
+    <ol>
+{{- range $i, $source := . }}
+      <li id="s{{ add $i 1 }}">{{ partial "inline.html" (dict "page" $ "text" $source) }}</li>
+{{- end }}
+    </ol>
+  </section>
+{{ end }}
+  </article>
+  <nav class="pager"><a href="{{ $card.page.RelPermalink }}">Zpět na {{ cond $single "okruh" "kartu" }} {{ $card.number }}</a>{{ with $elsewhere }}<a href="{{ . }}" target="_blank" rel="noopener">{{ cond $single "Tatáž otázka" "Tytéž otázky" }} na myslivecke-zkousky.cz</a>{{ else }}<span></span>{{ end }}</nav>
+{{ end }}

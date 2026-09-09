@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ block "title" . }}{{ end }}</title>
+<meta name="description" content="{{ block "description" . }}{{ end }}">
+<link rel="stylesheet" href="{{ "style.css" | relURL }}">{{ if ne .Kind "page" }}
+<script src="{{ "progress.js" | relURL }}"></script>{{ end }}
+{{ partial "analytics.html" . }}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">Myslitest</a>
+  </div>
+</header>
+<main>
+<div class="wrap">{{ block "main" . }}{{ end }}</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Pomozte to vylepšit: <a href="{{ site.Params.editBase }}/{{ .File.Path }}" target="_blank" rel="noopener">upravte tuto stránku</a> nebo <a href="mailto:{{ site.Params.email }}">napište</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

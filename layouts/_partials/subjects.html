@@ -1,0 +1,15 @@
+{{- /* The subjects in the order of the source material, with the computed
+counts. */ -}}
+{{- $subjects := slice -}}
+{{- range (sort (site.GetPage "/predmet").Sections "Weight") -}}
+  {{- $cards := partial "cards.html" . -}}
+  {{- $questions := 0 -}}
+  {{- range $cards }}{{ $questions = add $questions .count }}{{ end -}}
+  {{- $subjects = $subjects | append (dict
+      "page" .
+      "slug" (path.Base .File.Dir)
+      "roman" (index (slice "" "I" "II" "III" "IV" "V" "VI" "VII") .Weight)
+      "cards" $cards
+      "questions" $questions) -}}
+{{- end -}}
+{{- return $subjects -}}

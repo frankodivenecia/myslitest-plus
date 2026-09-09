@@ -1,0 +1,14 @@
+# The HTML is built from markdown here: Hugo runs in CI, nothing generated
+# is committed to the repository.
+pages:
+  stage: deploy
+  image:
+    name: hugomods/hugo:0.165.0
+    entrypoint: [""]
+  script:
+    - hugo --destination public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

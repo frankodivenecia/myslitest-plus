@@ -1,0 +1,7 @@
+{{- /* The card the page sits on: its number, question count and the ordinal of
+the first question. */ -}}
+{{- $page := . -}}
+{{- if eq $page.Kind "page" }}{{ $page = $page.Parent }}{{ end -}}
+{{- $found := "" -}}
+{{- range partial "cards.html" $page.Parent }}{{ if eq .page.RelPermalink $page.RelPermalink }}{{ $found = . }}{{ end }}{{ end -}}
+{{- return $found -}}

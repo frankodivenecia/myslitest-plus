@@ -1,0 +1,15 @@
+{{ define "title" }}{{ .Params.head_title }}{{ end }}
+{{- define "description" }}{{ partial "fill.html" (dict "page" . "text" .Params.description) }}{{ end -}}
+{{ define "main" }}
+  <h1 class="page-title">{{ partial "inline.html" (dict "page" . "text" .Title) }}</h1>
+  <p class="intro">{{ partial "inline.html" (dict "page" . "text" (partial "fill.html" (dict "page" . "text" .RawContent))) }}</p>
+  <ul class="subjects">
+{{- range partial "subjects.html" . }}
+<li data-subject="{{ .slug }}" data-questions="{{ .questions }}"><a href="{{ .page.RelPermalink }}">
+  <span class="roman">{{ .roman }}</span>
+  <span class="name">{{ partial "inline.html" (dict "page" .page "text" .page.Title) }}</span>
+  <span class="count">{{ .questions }} {{ partial "plural.html" .questions }}</span>
+</a></li>
+{{- end }}
+  </ul>
+{{ end }}

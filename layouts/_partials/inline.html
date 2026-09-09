@@ -1,0 +1,20 @@
+{{- /* A piece of markdown as HTML the way the site sets it: Czech typography,
+italics as <cite>, source links from [1] and non-breaking year ranges. Takes a
+dict with the keys page, text and an optional block (for multi-paragraph
+text). */ -}}
+{{- $options := dict "display" "inline" -}}
+{{- if .block }}{{ $options = dict }}{{ end -}}
+{{- $html := .page.RenderString $options (partial "typography.html" .text) -}}
+{{- $html = replaceRE `<em>(.*?)</em>` "<cite>${1}</cite>" $html -}}
+{{- /* A link out of the site opens in a new tab: the card being learned stays
+where it was. Links within the site — to an answer, to a source in the list
+below — keep the tab, they are the reading itself. */ -}}
+{{- $html = replaceRE `<a href="(https?://[^"]*)"` `<a href="${1}" target="_blank" rel="noopener"` $html -}}
+{{- $html = replaceRE `\[(\d+)\]` `<a class="ref" href="#s${1}">${1}</a>` $html -}}
+{{- $html = replaceRE `</a><a class="ref"` `</a><span class="comma">,</span><a class="ref"` $html -}}
+{{- $html = replaceRE `(\d{4}–\d{4})` `<span class="nowrap">${1}</span>` $html -}}
+{{- /* A dental formula is one fraction: the teeth of the upper jaw over those
+of the lower. Written in markdown as "3 1 4 2 / 3 1 4 3", it comes out stacked
+with a rule between the two rows. */ -}}
+{{- $html = replaceRE `(\d \d \d \d) / (\d \d \d \d)` `<span class="fraction"><span>${1}</span><span>${2}</span></span>` $html -}}
+{{- return (safeHTML $html) -}}

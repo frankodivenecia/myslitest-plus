@@ -1,0 +1,4 @@
+{{- /* Genitive after a numeral: 1 otázka, 3 otázky, 5 otázek. */ -}}
+{{ $word := "otázek" }}
+{{ if eq . 1 }}{{ $word = "otázka" }}{{ else if and (ge . 2) (le . 4) }}{{ $word = "otázky" }}{{ end }}
+{{ return $word }}

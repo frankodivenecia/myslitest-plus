@@ -1,0 +1,42 @@
+{{- /* The same questions on myslivecke-zkousky.cz. That site answers the same
+official set (vyhláška č. 244/2002 Sb.) and lays it out the same way: seven
+subjects, twenty cards, blocks A/B/C, one page per block. Its page number
+therefore follows from the block code — odpoved.php?ido=1 is I/A/1, ido=420 is
+VII/C/20 — and nothing has to be written down.
+
+Two things do not follow. The other site has the headings of VII/B/1 and
+VII/B/2 swapped, so those two blocks are linked by the questions, not by the
+code; and subject IV is written here as continuous okruhy, whose questions are
+merged and reworded, so each one that survives unchanged points to its page by
+hand. Both are written in the card's front matter as elsewhere: a block letter
+or a question number mapped to the page number over there.
+
+Takes the card page and returns one URL per block — or, for a subject written
+as okruhy, one URL per question, empty where the question has no counterpart
+there. */ -}}
+{{- $card := partial "card.html" . -}}
+{{- $subject := partial "subject.html" . -}}
+{{- $blocks := partial "blocks.html" . -}}
+{{- $written := .Params.elsewhere | default dict -}}
+{{- $sk := $subject.page.Weight -}}
+{{- $urls := slice -}}
+{{- if eq $subject.page.Params.part "okruh" -}}
+  {{- range $i, $question := (index $blocks 0).questions -}}
+    {{- $ido := index $written (string (add $i 1)) -}}
+    {{- if $ido -}}
+      {{- $urls = $urls | append (printf "https://www.myslivecke-zkousky.cz/odpoved.php?sk=%d&ido=%v#otazky" $sk $ido) -}}
+    {{- else -}}
+      {{- $urls = $urls | append "" -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- range $b, $block := $blocks -}}
+    {{- $letter := index (slice "a" "b" "c" "d" "e" "f" "g" "h") $b -}}
+    {{- $ido := index $written $letter -}}
+    {{- if not $ido -}}
+      {{- $ido = add (add (mul (sub $sk 1) 60) (mul $b 20)) $card.number -}}
+    {{- end -}}
+    {{- $urls = $urls | append (printf "https://www.myslivecke-zkousky.cz/odpoved.php?sk=%d&ido=%v#otazky" $sk $ido) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $urls -}}

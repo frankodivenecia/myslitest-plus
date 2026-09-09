@@ -1,0 +1,24 @@
+{{- /* The body of a card is headings and numbered questions, nothing else.
+Returns the blocks as dicts with a heading and questions; a card with no heading
+yields a single unnamed block, which is how subject IV is written. */ -}}
+{{- $blocks := slice -}}
+{{- $heading := "" -}}
+{{- $questions := slice -}}
+{{- $open := false -}}
+{{- range (split .RawContent "\n") -}}
+  {{- if hasPrefix . "## " -}}
+    {{- if $open -}}
+      {{- $blocks = $blocks | append (dict "heading" $heading "questions" $questions) -}}
+    {{- end -}}
+    {{- $heading = strings.TrimPrefix "## " . -}}
+    {{- $questions = slice -}}
+    {{- $open = true -}}
+  {{- else if findRE `^\d+\. ` . -}}
+    {{- $questions = $questions | append (replaceRE `^\d+\. ` "" .) -}}
+    {{- $open = true -}}
+  {{- end -}}
+{{- end -}}
+{{- if $open -}}
+  {{- $blocks = $blocks | append (dict "heading" $heading "questions" $questions) -}}
+{{- end -}}
+{{- return $blocks -}}

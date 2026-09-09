@@ -1,0 +1,68 @@
+{{- define "title" -}}
+  {{- $subject := partial "subject.html" . -}}
+  {{- $card := partial "card.html" . -}}
+  {{- if eq $subject.page.Params.part "okruh" -}}
+    {{- $blocks := partial "blocks.html" . -}}
+    {{ partial "plain.html" (index $blocks 0).heading }} — {{ partial "plain.html" $subject.page.Title }} — Myslitest
+  {{- else -}}
+    {{ partial "plain.html" $subject.page.Title }} — soubor otázek {{ $card.number }} — Myslitest
+  {{- end -}}
+{{- end -}}
+{{- define "description" -}}
+  {{- $subject := partial "subject.html" . -}}
+  {{- $card := partial "card.html" . -}}
+  {{- $name := partial "plain.html" $subject.page.Title -}}
+  {{- if eq $subject.page.Params.part "okruh" -}}
+    {{- $blocks := partial "blocks.html" . -}}
+    Okruh {{ $card.number }} předmětu {{ $name }}: {{ partial "plain.html" (index $blocks 0).heading }}.
+  {{- else -}}
+    Soubor otázek číslo {{ $card.number }} z předmětu {{ $name }}.
+  {{- end -}}
+{{- end -}}
+{{ define "main" }}
+{{- $subject := partial "subject.html" . -}}
+{{- $card := partial "card.html" . -}}
+{{- $blocks := partial "blocks.html" . -}}
+{{- $single := eq $subject.page.Params.part "okruh" -}}
+{{- $word := $subject.page.Params.part -}}
+{{- $elsewhere := partial "elsewhere.html" . }}
+  <p class="breadcrumbs"><a href="{{ site.Home.RelPermalink }}">Předměty</a> / <a href="{{ $subject.page.RelPermalink }}">{{ partial "inline.html" (dict "page" . "text" $subject.page.Title) }}</a></p>
+  <article class="card" data-card="{{ $subject.slug }}/{{ $card.part }}">
+  <div class="card-header">
+    <div class="subject">
+      <p class="subject-number">Předmět {{ $subject.roman }}</p>
+      <p class="subject-name">{{ if $single }}{{ partial "inline.html" (dict "page" . "text" (index $blocks 0).heading) }}{{ else }}<a href="{{ $subject.page.RelPermalink }}">{{ partial "inline.html" (dict "page" . "text" $subject.page.Title) }}</a>{{ end }}</p>
+    </div>
+    <div class="ordinal"><span class="label">{{ if $single }}okruh{{ else }}soubor otázek{{ end }}</span><span class="number">{{ $card.number }}</span></div>
+  </div>
+{{ if $single }}
+    <section class="block only"><ul class="questions">
+      {{- range $i, $question := (index $blocks 0).questions -}}
+        <li class="question" data-question="{{ add $i 1 }}"><span class="question-number">{{ add $card.offset $i }}.</span><div>{{ partial "inline.html" (dict "page" $ "text" $question) }}{{ with index $elsewhere $i }}<a class="elsewhere" href="{{ . }}" target="_blank" rel="noopener" title="Tatáž otázka na myslivecke-zkousky.cz" aria-label="Tatáž otázka na myslivecke-zkousky.cz"></a>{{ end }}</div></li>
+      {{- end -}}
+    </ul></section>
+{{- else -}}
+  {{- range $b, $block := $blocks }}
+  {{- $letter := index (slice "A" "B" "C" "D" "E" "F" "G" "H") $b }}
+  <section class="block">
+    <div class="block-header"><span class="letter">{{ $letter }}</span><h3>{{ partial "inline.html" (dict "page" $ "text" $block.heading) }}</h3><span class="code">{{ $subject.roman }}/{{ $letter }}/{{ $card.number }}</span></div>
+    <ul class="questions">
+      {{- range $i, $question := $block.questions -}}
+        <li class="question" data-question="{{ $letter }}{{ add $i 1 }}"><span class="question-number">{{ add $i 1 }}.</span><div>{{ partial "inline.html" (dict "page" $ "text" $question) }}</div></li>
+      {{- end -}}
+    </ul>
+{{- with index $elsewhere $b }}
+    <p class="elsewhere"><a href="{{ . }}" target="_blank" rel="noopener">Tytéž otázky na myslivecke-zkousky.cz</a></p>
+{{- end }}
+  </section>
+  {{- end }}
+{{- end }}
+  </article>
+{{- $cards := partial "cards.html" .Parent }}
+{{- $previous := "" }}{{ $next := "" }}
+{{- range $cards }}
+  {{- if lt .number $card.number }}{{ $previous = . }}{{ end }}
+  {{- if and (gt .number $card.number) (not $next) }}{{ $next = . }}{{ end }}
+{{- end }}
+  <nav class="pager">{{ if $previous }}<a href="{{ $previous.page.RelPermalink }}">Předchozí {{ $word }}{{ if not $single }} {{ $previous.number }}{{ end }}</a>{{ else }}<span></span>{{ end }}{{ if $next }}<a href="{{ $next.page.RelPermalink }}">Další {{ $word }}{{ if not $single }} {{ $next.number }}{{ end }}</a>{{ else }}<span></span>{{ end }}</nav>
+{{ end }}

@@ -1,0 +1,610 @@
+/* Literata — the typeface of the whole site. TypeTogether drew it for reading
+   on screen: a tall x-height and a solid stroke hold up even in small labels,
+   and the Czech diacritics are complete. Subset to Latin, SIL OFL license in
+   pismo/OFL.txt. The variable opsz axis draws small text heavier and large
+   headings finer; the wght axis carries both weights in use (400 and 700).
+   The italic comes in one weight only — it appears in source titles alone. */
+@font-face {
+  font-family: 'Literata';
+  src: url('pismo/literata.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Literata';
+  src: url('pismo/literata-kurziva.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --forest: #3E5925;          /* taken from the header of the printed cards */
+  --forest-dark: #2C3E1A;
+  --ink: #1A1D17;
+  --muted: #5B6153;
+  --paper: #F2F3ED;
+  --white: #fff;
+  --rule: #D8DCCC;
+  --sage: #E3E7D3;       /* light loden, one shade deeper than the paper */
+  /* hovered row: paper with a hint of loden, not white — the highlight should
+     point the row out, not tear it off the page */
+  --highlight: rgba(62, 89, 37, 0.06);
+  --brass: #A8823A;        /* brass of hunting buttons */
+
+  /* One typeface for the whole site; until it downloads, the nearest system
+     serif holds the setting. */
+  --font: 'Literata', 'Iowan Old Style', Palatino, Georgia, serif;
+
+  --width: 45rem;          /* index pages */
+  --reading-width: 41rem;    /* card pages: a shorter line reads better */
+  --gutter: 2rem;            /* gutter for block letters and question numbers */
+  /* The circle and the ratio are built by progress.js, so the column is
+     reserved here — otherwise the row would jump once the script loads. */
+  --learned-width: 2.15rem;  /* circle 1.15rem + 1rem indent */
+  --status-width: 4.95rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex; flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+a { color: var(--forest); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--forest-dark); }
+:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; }
+
+.wrap { max-width: var(--width); margin: 0 auto; padding: 0 1.5rem; }
+
+/* --- header: the loden bar --- */
+/* Only a shade deeper than the paper: the bar should stand out from the page,
+   not cut it in two. */
+.site-header {
+  position: relative;
+  background: linear-gradient(176deg, #E9ECDC, var(--sage));
+  /* a soft shadow instead of a hard rule: the bar lies on the paper, it does
+     not slice through it */
+  box-shadow: 0 12px 20px -20px rgba(62, 89, 37, 0.5);
+}
+.site-header .wrap { position: relative; padding-block: 1rem; }
+
+/* Bottom edge: a green rule, clearer in the middle, fading out to the sides. */
+.site-header::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent,
+    rgba(62, 89, 37, 0.16) 15%, rgba(62, 89, 37, 0.32) 50%,
+    rgba(62, 89, 37, 0.16) 85%, transparent);
+}
+
+.brand {
+  position: relative; display: inline-block; padding-left: 1.8rem;
+  font-weight: 700; font-size: 1.2rem;
+  line-height: 1.3; letter-spacing: 0.02em;
+  color: var(--ink); text-decoration: none;
+  transition: color 200ms ease;
+}
+
+/* A hunter's hat in profile, crown to the left. The shape is cut out by
+   clip-path, the colors come from three background layers: loden, the band and
+   the brush behind it. The layers are plain rectangles — turning them into a
+   hat is the clip's job. */
+.brand::before {
+  content: "";
+  position: absolute; left: 0.05rem; top: 50%;
+  width: 1.6rem; height: 1.2rem; margin-top: -0.6rem;
+  background:
+    linear-gradient(var(--brass), #8A6A2A) no-repeat 1.03rem 0 / 0.29rem 0.24rem,
+    linear-gradient(#22301A, #22301A) no-repeat 0.44rem 0.47rem / 0.74rem 0.15rem,
+    linear-gradient(115deg, #7E8E5D, var(--forest));
+  clip-path: polygon(
+    40% 18%, 58% 16%,           /* crown: a slightly domed top */
+    65% 16%, 71% 0, 77% 4%,     /* brush behind the band */
+    68% 20%, 73% 54%,           /* the back wall widens downwards */
+    94% 44%, 95% 56%, 75% 65%,  /* brim turned up at the back */
+    32% 71%, 8% 65%, 7% 54%,    /* pulled down over the eyes at the front */
+    28% 51%, 33% 24%);
+  transform-origin: 98% 48%;    /* tips around the back end of the brim */
+  transition: transform 280ms cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.brand:hover, .brand:focus-visible { color: var(--forest); }
+.brand:hover::before, .brand:focus-visible::before {
+  transform: rotate(-20deg) translateY(-0.08rem);
+}
+
+.breadcrumbs { font-size: 0.86rem; color: var(--muted); margin: 1.6rem 0 0; }
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs a:hover { color: var(--forest); }
+
+/* --- page titles --- */
+h1.page-title { font-size: 2.05rem; margin: 1.5rem 0 1.1rem; letter-spacing: -0.005em; }
+.intro { font-size: 1.1rem; color: var(--muted); max-width: 34rem; margin: 0; text-wrap: pretty; }
+main { flex: 1; padding-bottom: 2.5rem; }
+
+/* --- subject index --- */
+.subjects {
+  list-style: none;
+  /* rules and row highlight reach past the text so the roman numeral does not
+     sit on the edge */
+  margin: 2.75rem -0.75rem 0; padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.subjects li { border-bottom: 1px solid var(--rule); }
+.subjects a {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  column-gap: 1.25rem;
+  padding: 1.2rem 1.5rem 1.25rem;
+  text-decoration: none; color: var(--ink);
+  transition: background-color 120ms linear;
+}
+.subjects a:hover { background: var(--highlight); }
+.subjects .roman {
+  font-weight: 700; font-size: 1.12rem;
+  color: var(--forest); letter-spacing: 0.04em;
+}
+.subjects a:hover .roman { color: var(--forest-dark); }
+.subjects .name { font-size: 1.16rem; }
+/* How much of the subject is learned; without the script the bare question
+   count stays here. The column keeps its width for the longer scriptless text
+   as well, so the rows line up. */
+.subjects .count {
+  min-width: 5.5rem;
+  font-size: 0.86rem; color: var(--muted);
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+.subjects .count.done { color: var(--forest); }
+
+/* --- card index within a subject: one column, not a grid --- */
+.grid {
+  list-style: none; padding: 0;
+  /* rules and row highlight reach past the text so the highlight does not
+     cling to the letters */
+  margin: 2.5rem -0.75rem 0; padding-inline: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+.grid > li {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  border-bottom: 1px solid var(--rule);
+  transition: background-color 120ms linear;
+}
+.js .grid > li { grid-template-columns: minmax(0, 1fr) var(--status-width); }
+.grid > li:has(a:hover) { background: var(--highlight); }
+.grid a {
+  display: grid; grid-template-columns: var(--gutter) minmax(0, 1fr);
+  align-items: baseline;
+  padding: 0.9rem 0 1rem;
+  text-decoration: none; color: var(--ink);
+}
+.grid .card-number {
+  font-weight: 700; font-size: 1.1rem;
+  color: var(--forest); font-variant-numeric: tabular-nums;
+  text-align: right; padding-right: 0.6rem;
+}
+.grid > li:has(a:hover) .card-number { color: var(--forest-dark); }
+
+/* Blocks are marked A/B/C just as on the card itself. */
+.grid ul {
+  list-style: none; margin: 0; padding: 0; counter-reset: blok;
+}
+.grid ul li {
+  display: grid; grid-template-columns: 1.35rem minmax(0, 1fr);
+  align-items: baseline;
+  margin-top: 0.25rem;
+  line-height: 1.45; text-wrap: pretty;
+}
+.grid ul li::before {
+  counter-increment: blok;
+  content: counter(blok, upper-alpha);
+  font-weight: 700; font-size: 0.85rem; color: var(--forest);
+}
+.grid ul li:first-child { margin-top: 0; }
+/* a lone block gets no letter, there would be nothing to tell apart */
+.grid ul li:only-child { display: block; }
+.grid ul li:only-child::before { content: none; }
+.grid .untitled { color: var(--muted); font-style: italic; }
+
+/* --- checking off learned questions --- */
+/* Without the script the state has nowhere to be stored, so the script itself
+   reveals the marks (html.js). */
+.learned, .status { display: none; }
+
+/* A check mark drawn from borders: font-independent and sharp at any size. */
+.learned::after {
+  content: "";
+  position: absolute; inset: 0; margin: auto;
+  border-style: solid; border-color: var(--white);
+  transform: translateY(-0.05rem) rotate(45deg);
+}
+
+/* on the card: a circle next to the question, filled in on tap */
+.js .learned {
+  display: block; position: relative;
+  align-self: start; margin: 0.22rem 0 0 1rem; padding: 0;
+  width: 1.15rem; height: 1.15rem;
+  border: 1.5px solid var(--rule); border-radius: 50%;
+  background: none; cursor: pointer;
+  transition: background-color 120ms linear, border-color 120ms linear;
+}
+.learned::after {
+  width: 0.3rem; height: 0.55rem;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+}
+/* a finger is bigger than the circle, so an invisible tap target surrounds it */
+.learned::before { content: ""; position: absolute; inset: -0.4rem -0.5rem; }
+/* hover preview: the check mark shows in grey before the tap */
+.learned:hover { border-color: var(--forest); }
+.learned:hover::after { border-color: var(--rule); opacity: 1; }
+.learned[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); }
+.learned[aria-pressed="true"]::after,
+.learned[aria-pressed="true"]:hover::after { border-color: var(--white); opacity: 1; }
+
+.question:has(.learned[aria-pressed="true"]) .question-number,
+.question:has(.learned[aria-pressed="true"]) > div { opacity: 0.45; }
+
+/* how many of the card's questions are learned; the script inserts it below
+   the title */
+.card:has(.progress) .card-header { margin-bottom: 0.5rem; }
+.progress { margin: 0 0 1.9rem; font-size: 0.86rem; color: var(--muted); }
+.progress.done { color: var(--forest); }
+
+/* in the index: how much of the card is learned — the same ratio as for
+   subjects on the home page, only not editable here */
+.js .status {
+  display: block;
+  align-self: center;
+  /* inset from the row edge just like the ratio for subjects on the home page */
+  padding-inline: 0.9rem 0.75rem;
+  /* every row is its own grid, so the column is held at the same width */
+  min-width: var(--status-width); text-align: right;
+  font-size: 0.8rem; color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.status.done { color: var(--forest); }
+.grid > li:has(.status.done) a { opacity: 0.5; }
+
+/* --- card: a single reading column, no frame --- */
+main:has(.card, .grid, .answers) .wrap { max-width: var(--reading-width); }
+
+.card { margin-top: 2rem; }
+
+/* The page title is a single line: the subject name and the set number.
+   The subject numbering is in the breadcrumbs, and the reader can count the
+   questions. */
+.card-header {
+  --heading: 1.95rem;
+  margin-bottom: 1.9rem;
+  font-weight: 700;
+  font-size: 0;            /* swallows the break between the <div>s; a non-breaking space separates them */
+  line-height: 1.15; letter-spacing: -0.005em; text-wrap: balance;
+}
+.card-header .subject-number,
+.card-header .ordinal .label { display: none; }
+.card-header .subject,
+.card-header .ordinal { display: inline; margin: 0; font-size: 0; }
+.card-header .subject-name,
+.card-header .ordinal .number {
+  display: inline; margin: 0;
+  font: inherit; font-size: var(--heading); color: inherit;
+}
+.card-header .ordinal .number { font-variant-numeric: lining-nums; }
+.card-header .ordinal .number::before { content: "\00a0"; }
+.card-header .subject-name a { color: inherit; text-decoration: none; }
+.card-header .subject-name a:hover { color: var(--forest); text-decoration: underline; }
+
+/* --- blocks A/B/C --- */
+.block { position: static; padding: 0; border: 0; }
+.block + .block { margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid var(--rule); }
+
+.block-header {
+  display: grid; grid-template-columns: var(--gutter) minmax(0, 1fr);
+  align-items: baseline; margin-bottom: 0.95rem;
+}
+.letter {
+  position: static;
+  font-weight: 700; font-size: 1.2rem;
+  line-height: inherit; color: var(--forest);
+}
+.block h3 { font-size: 1.3rem; line-height: 1.25; margin: 0; text-wrap: pretty; }
+.block h3.untitled { font-size: 1rem; font-weight: 400; font-style: italic; color: var(--muted); }
+/* the block code (I/A/1) is an internal mark from the syllabus, it adds
+   nothing for the reader */
+.code { display: none; }
+
+/* --- questions --- */
+.questions { list-style: none; margin: 0; padding: 0; }
+.question {
+  display: grid; grid-template-columns: var(--gutter) minmax(0, 1fr) auto;
+  align-items: baseline;
+  margin-top: 0.7rem; padding: 0;
+  line-height: 1.55; text-wrap: pretty;
+}
+.js .question { grid-template-columns: var(--gutter) minmax(0, 1fr) var(--learned-width); }
+.question:first-child { margin-top: 0; }
+.question .question-number {
+  font-size: 0.95rem;
+  color: var(--muted); font-variant-numeric: tabular-nums;
+  text-align: right; padding-right: 0.6rem;
+}
+/* A question with an answer is clickable; the underline is faint to keep the
+   list calm. */
+.question a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+.question a:hover { color: var(--forest); text-decoration-color: currentColor; }
+
+/* --- the same questions on myslivecke-zkousky.cz --- */
+/* Almost the whole set is answered there as well. One page of that site holds
+   a whole block, so the link belongs under the block, not on every question —
+   five links would all lead to the same place. It is set quietly: it points
+   away from the site and must not outshout the questions. */
+p.elsewhere {
+  margin: 0.9rem 0 0;
+  padding-left: var(--gutter);
+  font-size: 0.86rem;
+}
+p.elsewhere a { color: var(--muted); text-decoration-color: var(--rule); }
+p.elsewhere a:hover { color: var(--forest); text-decoration-color: currentColor; }
+
+/* Subject IV is written as okruhy: its questions are not in blocks and each
+   one leads to a different page over there, so the mark goes on the question
+   itself. The arrow is drawn from borders, like the check mark — a glyph could
+   be missing from the typeface, a border cannot. */
+.question a.elsewhere {
+  position: relative; display: inline-block;
+  width: 1.15em; height: 1.15em;
+  margin-left: 0.15em; vertical-align: -0.26em;
+  color: var(--muted); text-decoration: none;
+}
+.question a.elsewhere:hover { color: var(--forest); }
+/* the shaft, from the bottom left corner up to the head */
+.question a.elsewhere::before {
+  content: "";
+  position: absolute; left: 0.2em; bottom: 0.2em;
+  width: 0.72em; height: 0;
+  border-top: 1.5px solid currentColor;
+  transform: rotate(-45deg); transform-origin: 0 50%;
+}
+/* the head: two borders of a square, the corner it meets the shaft in */
+.question a.elsewhere::after {
+  content: "";
+  position: absolute; right: 0.2em; top: 0.2em;
+  width: 0.34em; height: 0.34em;
+  border: solid currentColor; border-width: 1.5px 1.5px 0 0;
+}
+
+/* --- page with the answer to a single question --- */
+.answers { margin-top: 2rem; }
+
+/* The page heading is the question itself; the breadcrumbs above it say where
+   it belongs. */
+.answers h1 { font-size: 1.95rem; margin: 0 0 2.4rem; letter-spacing: -0.005em; }
+
+.answers > .sources {
+  margin-top: 2.4rem; padding-top: 2.4rem; border-top: 1px solid var(--rule);
+}
+
+/* Answer subheading: one level below the question, the same size as a block
+   heading on the card. */
+.answer h2 {
+  margin: 2.6rem 0 1.2rem;
+  font-size: 1.3rem; line-height: 1.25; text-wrap: pretty;
+}
+/* The answer is the longest read on the site; it belongs in the same serif as
+   the questions. */
+.answer p, .answer li { text-wrap: pretty; }
+.answer p { margin: 0.75rem 0; }
+.answer ul { margin: 0.75rem 0; padding-left: 1.1rem; }
+.answer li { margin-top: 0.6rem; }
+.answer li::marker { color: var(--forest); }
+
+/* The first paragraph is the sentence to open with at the exam. It is a block
+   of its own, so it gets the same air above and below — wider than between
+   paragraphs, and the same gap the heading leaves above it. */
+.answer .summary {
+  margin: 0 0 2.4rem;
+  padding-left: 1rem; border-left: 3px solid var(--forest);
+  font-size: 1.14rem; line-height: 1.5;
+}
+
+/* An answer nobody has written yet. The page exists so that there is a place to
+   write it in, and it says so where the opening sentence would stand: the same
+   block, only its rule is dashed and the text is quiet — nothing here is
+   anything to learn. */
+.answer .missing {
+  margin: 0;
+  padding-left: 1rem; border-left: 3px dashed var(--rule);
+  font-size: 1.14rem; line-height: 1.5; color: var(--muted);
+}
+
+/* An answer a machine wrote and nobody has read yet. It stands above the
+   opening sentence, because the reader has to know what they are reading
+   before they read it, and it is brass rather than loden so that it reads as
+   a caution and not as part of the answer. */
+.answer .unreviewed {
+  margin: 0 0 2rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--brass);
+  background: rgba(168, 130, 58, 0.08);
+  font-size: 0.95rem; line-height: 1.5;
+}
+.answer .unreviewed a { color: inherit; }
+
+/* Verbatim quotations from statutes and rulings. */
+.answer blockquote {
+  margin: 0.9rem 0; padding-left: 1rem;
+  border-left: 1px solid var(--rule);
+}
+.answer blockquote p { margin: 0; }
+.answer blockquote cite {
+  display: block; margin-top: 0.5rem;
+  font-size: 0.84rem; font-style: normal; color: var(--muted);
+}
+
+/* A list of breeds with photos: the picture carries the answer, the name under
+   it leads to Wikipedia. The point of the picture is the whole dog, so it is
+   never cropped — the frame is one shape for all of them and the photo, tall
+   or wide, is fitted into it whole. */
+.answer ul:has(img) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem 1rem;
+  margin: 1.6rem 0;
+  padding: 0;
+  list-style: none;
+}
+.answer ul:has(img) li {
+  margin: 0;
+  font-size: 0.95rem; line-height: 1.35;
+}
+.answer ul:has(img) img {
+  display: block;
+  width: 100%; aspect-ratio: 4 / 3; object-fit: contain;
+  margin-bottom: 0.4rem;
+}
+
+/* Link into the source list: superscript, so it does not disturb the reading.
+   Literata has true superior figures drawn with a heavier stroke — a merely
+   shrunken ordinary figure goes pale next to the text. The shrinking is kept
+   only for browsers that cannot do superscripts. */
+.ref {
+  font-size: 0.68em; vertical-align: 0.5em;
+  padding-left: 0.1em;
+  font-variant-numeric: lining-nums; text-decoration: none;
+}
+@supports (font-variant-position: super) {
+  .ref {
+    font-size: inherit; vertical-align: baseline;
+    padding-left: 0.04em;
+    font-variant-position: super;
+  }
+}
+.ref:hover { text-decoration: underline; }
+
+/* Two sources in a row: without a separator "9" and "10" would read as "910".
+   The comma sits in the text, not in CSS — a .ref + .ref selector cannot see
+   the text between the links and would set a comma even between links half a
+   paragraph apart. The typeface has no superior comma, so it is shrunk and
+   raised to the figures. */
+.comma {
+  font-size: 0.62em; vertical-align: 0.42em;
+  color: var(--forest);
+}
+
+/* A range of years must not break: "2013–" at the end of one line and "2021"
+   at the start of the next are two numbers, not a range. */
+.nowrap { white-space: nowrap; }
+
+/* A dental formula is a fraction: the teeth of the upper jaw over those of the
+   lower. The two rows are stacked in an inline-flex column and the rule between
+   them is a border — a slash would read as a date or a ratio. The rows are
+   shrunk so the stacked pair keeps the height of a line of text. */
+.fraction {
+  display: inline-flex; flex-direction: column; align-items: center;
+  vertical-align: middle; line-height: 1.08;
+  font-size: 0.8em; font-variant-numeric: lining-nums;
+}
+/* The figures are read one by one, so they need air between them: at this size
+   an ordinary word space closes up and "3 1 4 2" reads as one number. */
+.fraction span { padding: 0 0.12em; word-spacing: 0.3em; }
+.fraction span:first-child { border-bottom: 1px solid currentColor; }
+/* after the jump, make it visible which source it was */
+.sources li:target { background: var(--highlight); }
+
+/* --- source list --- */
+/* The heading is only a label above the apparatus, not a level in the reading. */
+.sources h2 {
+  margin: 0 0 0.9rem;
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted);
+}
+.sources ol { margin: 0; padding-left: 1.4rem; font-size: 0.88rem; color: var(--muted); }
+.sources li { margin-top: 0.7rem; text-wrap: pretty; }
+.sources li:first-child { margin-top: 0; }
+.sources li::marker { font-variant-numeric: tabular-nums; }
+.sources cite { font-style: italic; }
+
+/* --- paging --- */
+.pager {
+  display: flex; justify-content: space-between; gap: 1rem;
+  margin: 3rem 0 0; padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.92rem;
+}
+
+/* --- footer --- */
+.site-footer {
+  margin-top: 4.5rem; border-top: 1px solid var(--rule);
+  /* no white area, just paper fading gently into a green shade */
+  background: linear-gradient(rgba(62, 89, 37, 0.04), rgba(62, 89, 37, 0.11));
+}
+.site-footer .wrap { padding-block: 1.5rem 2.25rem; }
+.site-footer p { margin: 0.3rem 0; max-width: 34rem; font-size: 0.86rem; color: var(--muted); }
+
+@media (max-width: 38rem) {
+  :root { --gutter: 1.7rem; --status-width: 4.5rem; }
+  body { font-size: 17px; }
+  .wrap { padding: 0 1.15rem; }
+  h1.page-title { font-size: 1.65rem; }
+  .intro { font-size: 1.05rem; }
+
+  .subjects { margin-inline: -0.6rem; }
+  .subjects a {
+    grid-template-columns: 2.2rem minmax(0, 1fr) auto;
+    column-gap: 0.9rem;
+    padding-inline: 1.2rem;
+  }
+  .subjects .count { min-width: 0; }
+
+  .grid { margin-inline: -0.6rem; padding-inline: 0.6rem; }
+  .js .status { padding-inline: 0.6rem; }
+  .grid ul li { grid-template-columns: 1.2rem minmax(0, 1fr); }
+
+  .card-header { --heading: 1.6rem; }
+  .block h3 { font-size: 1.18rem; }
+  .letter { font-size: 1.1rem; }
+
+  /* In a narrow column the right edge tears: non-breaking spaces hold long
+     stretches of text together and leave half a line empty beside them.
+     Hyphenation evens it out. The wide column is not hyphenated — there the
+     text fits without it. */
+  .answer p, .answer li, .sources li, .question, .intro, .grid ul li {
+    -webkit-hyphens: auto; hyphens: auto;
+    hyphenate-limit-chars: 8 4 3;
+  }
+
+  /* Two photos to a row: three would leave the breed names in a column of
+     single letters. */
+  .answer ul:has(img) { grid-template-columns: repeat(2, 1fr); }
+
+  .answers h1 { font-size: 1.6rem; }
+  .answer h2 { font-size: 1.18rem; }
+  .answer .summary { font-size: 1.08rem; padding-left: 0.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}

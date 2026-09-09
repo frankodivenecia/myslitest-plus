@@ -1,0 +1,15 @@
+{{- /* Czech typography: non-breaking spaces where a line should not break.
+The rules run twice because they chain — "v k lesu", "1 234 567". */ -}}
+{{- $t := . -}}
+{{- $nb := "\u00a0" -}}
+{{- range seq 2 -}}
+  {{- $t = replaceRE `(^|[^\p{L}\p{N}&;])([aiksuvzoAIKSUVZO]) ` (printf "${1}${2}%s" $nb) $t -}}
+  {{- $t = replaceRE ` –` (printf "%s–" $nb) $t -}}
+  {{- $t = replaceRE `§ (\d)` (printf "§%s${1}" $nb) $t -}}
+  {{- $t = replaceRE `č\. (\d)` (printf "č.%s${1}" $nb) $t -}}
+  {{- $t = replaceRE `(\d) (\d\d\d)\b` (printf "${1}%s${2}" $nb) $t -}}
+  {{- $t = replaceRE `(\d{1,2})\. (\d{1,2})\. (\d{4})` (printf "${1}.%s${2}.%s${3}" $nb $nb) $t -}}
+  {{- $t = replaceRE `\b(\p{Ll})\. (\p{Ll}\.)` (printf "${1}.%s${2}" $nb) $t -}}
+  {{- $t = replaceRE `(\d) ((?:Kč|km|kg|ha|mm|cm|m|g|%)\b)` (printf "${1}%s${2}" $nb) $t -}}
+{{- end -}}
+{{- return $t -}}

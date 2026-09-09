@@ -1,0 +1,6 @@
+{{- /* The subject the page belongs to, with the computed counts. */ -}}
+{{- $page := . -}}
+{{- range seq 3 }}{{ if ne $page.Type "predmet" }}{{ $page = $page.Parent }}{{ end }}{{ end -}}
+{{- $found := "" -}}
+{{- range partial "subjects.html" . }}{{ if eq .page.RelPermalink $page.RelPermalink }}{{ $found = . }}{{ end }}{{ end -}}
+{{- return $found -}}

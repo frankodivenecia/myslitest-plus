@@ -1,0 +1,8 @@
+{{- /* Fills the text with the numbers that are never written by hand. */ -}}
+{{- $totals := partial "totals.html" . -}}
+{{- $text := .text -}}
+{{- $text = replace $text "{{questions}}" (string $totals.questions) -}}
+{{- $text = replace $text "{{cards}}" (string $totals.cards) -}}
+{{- $text = replace $text "{{subjects}}" (string $totals.subjects) -}}
+{{- $text = replace $text "{{subjects_word}}" "sedmi" -}}
+{{- return $text -}}

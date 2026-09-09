@@ -1,0 +1,21 @@
+{{- /* A subject's cards sorted by the number in the directory name, with the
+question count and the ordinal of the first question — subject IV numbers its
+questions continuously across its parts. */ -}}
+{{- $cards := slice -}}
+{{- range .Pages -}}
+  {{- $part := path.Base .File.Dir -}}
+  {{- $count := len (findRE `(?m)^\d+\. ` .RawContent) -}}
+  {{- $cards = $cards | append (dict
+      "page" .
+      "part" $part
+      "number" (int (index (last 1 (split $part "-")) 0))
+      "count" $count) -}}
+{{- end -}}
+{{- $sorted := sort $cards "number" -}}
+{{- $offset := 1 -}}
+{{- $out := slice -}}
+{{- range $sorted -}}
+  {{- $out = $out | append (merge . (dict "offset" $offset)) -}}
+  {{- $offset = add $offset .count -}}
+{{- end -}}
+{{- return $out -}}

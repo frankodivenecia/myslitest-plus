@@ -1,0 +1,3 @@
+{{- /* Answer pages carry whole grids of breed photos, so the browser loads them
+as the reader scrolls down to them. */ -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" loading="lazy" decoding="async">

@@ -1,0 +1,30 @@
+{{- /* Where on the card the question answered here sits: which block it belongs
+to, its ordinal in that block and its ordinal among all questions of the card.
+The card says it by the link to this page. A page the card does not link to — an
+answer nobody has written yet — says it by its file name, a1 being the first
+question of block A. */ -}}
+{{- $blocks := partial "blocks.html" .Parent -}}
+{{- $needle := printf "](%s/index.html)" .File.ContentBaseName -}}
+{{- $block := -1 -}}
+{{- $index := 0 -}}
+{{- range $b, $item := $blocks -}}
+  {{- range $i, $question := $item.questions -}}
+    {{- if strings.Contains $question $needle -}}
+      {{- $block = $b -}}
+      {{- $index = $i -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if lt $block 0 -}}
+  {{- $name := .File.ContentBaseName -}}
+  {{- $block = 0 -}}
+  {{- range $b, $letter := (slice "a" "b" "c" "d" "e" "f" "g" "h") -}}
+    {{- if and (hasPrefix $name $letter) (lt $b (len $blocks)) }}{{ $block = $b }}{{ end -}}
+  {{- end -}}
+  {{- with replaceRE `\D` "" $name }}{{ $index = sub (int .) 1 }}{{ end -}}
+{{- end -}}
+{{- $ordinal := $index -}}
+{{- range $b, $item := $blocks -}}
+  {{- if lt $b $block }}{{ $ordinal = add $ordinal (len $item.questions) }}{{ end -}}
+{{- end -}}
+{{- return (dict "block" $block "index" $index "ordinal" $ordinal) -}}
