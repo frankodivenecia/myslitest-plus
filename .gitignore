@@ -1,6 +1,15 @@
+# --- Hugo (retiruje se, zatím ponecháno) ---
 # Generated site. Hugo builds it in CI, it does not belong in the repository.
 /public/
 # Directories for the local preview and Hugo's working files.
 /build/
 /resources/
 .hugo_build.lock
+
+# --- Python / FastAPI ---
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.db
