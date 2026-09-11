@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ APP_NAME }}{% endblock %}</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+{% set u = request.session.get('user') %}
+<header class="topbar">
+  <a class="brand" href="/">{{ APP_NAME }}</a>
+  {% if u %}
+  <nav class="nav">
+    <a href="/dashboard">Přehled</a>
+    <a href="/questions">Otázky</a>
+    <a href="/hard">Těžké</a>
+    <span class="who">{{ u.email }}</span>
+    <a class="logout" href="/logout">Odhlásit</a>
+  </nav>
+  {% endif %}
+</header>
+<main class="wrap">
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

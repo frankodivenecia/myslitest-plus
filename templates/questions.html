@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Otázky — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Otázky</h1>
+<p class="muted">Vyber předmět. U každého vidíš, kolik otázek máš zodpovězených a kolik označených jako těžké.</p>
+
+<ul class="subjects">
+  {% for s in subjects %}
+  {% set st = stats[s.id] %}
+  <li>
+    <a class="subj-link" href="/questions/subject/{{ s.slug }}">
+      <span class="roman">{{ s.roman }}</span> {{ s.title }}
+    </a>
+    <span class="muted counts">
+      {{ st.answered }}/{{ st.total }} zodpovězeno{% if st.hard %} · ⚑ {{ st.hard }}{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

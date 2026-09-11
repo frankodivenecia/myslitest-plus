@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Těžké — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Těžké otázky</h1>
+{% if not questions %}
+<p class="muted">Zatím sis žádnou otázku neoznačil(a) jako těžkou. Označíš je vlaječkou ⚑ u otázky.</p>
+{% else %}
+<p class="muted">{{ questions|length }} označených. Projdi si je a doplň odpovědi.</p>
+<ul class="qlist">
+  {% for q in questions %}
+  <li class="qrow">
+    <a class="qlink" href="/questions/{{ q.id }}">
+      <span class="dot {{ 'on' if answered.get(q.id) else 'off' }}"></span>
+      <span class="qid">{{ q.card.subject.roman }}/{{ q.qid }}</span>
+      <span class="qtext">{{ q.text }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}

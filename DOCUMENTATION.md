@@ -52,14 +52,20 @@ se přes `DATABASE_URL`.
 
 ## Pořadí stavby (atomické bloky)
 
-1. **Datová vrstva + import katalogu** ← *tento balík*
-   `app/config.py`, `app/models.py`, `app/importer.py`. Ověření `--dry-run`.
-2. **Auth + skeleton** — login/registrace (z Dominia), base template, login page
-   s README blurbem, session middleware, `/dashboard` stub.
-3. **Dashboard + prohlížeč otázek** — statistiky (podle typu A/B/C, stavu
-   vyplněnosti, počet těžkých) + procházení po předmětech/kartách.
-4. **Editor odpovědi + značka „těžká"** — formulář na otázce, uložení do
-   `user_questions`, toggle hard, pohled „jen těžké".
+1. **Datová vrstva + import katalogu** — HOTOVO
+   `app/config.py`, `app/models.py`, `app/importer.py`. Ověřeno na 1310 otázkách.
+2. **Auth + skeleton** — HOTOVO ← *tento balík*
+   `app/auth.py` (bcrypt napřímo, session, CSRF), `app/templates.py`, `app/main.py`
+   (session + login-guard + security-headers middleware), `app/routers/auth.py`
+   (login, otevřená registrace, logout), `app/routers/dashboard.py` (souhrn),
+   `templates/`, `static/app.css`. Odzkoušeno TestClientem (guard, register, login,
+   CSRF, lockout).
+3. **Prohlížeč otázek + editor odpovědí** — HOTOVO ← *tento balík*
+   `app/routers/questions.py` + `templates/questions.html`, `subject.html`,
+   `question.html`, `hard.html`. Procházení předmět→karta→otázka, editor vlastní
+   odpovědi (master `reference_md` jen ke čtení, tlačítko „Převzít vzor"),
+   značka „těžká" (⚑) + pohled `/hard`. Odzkoušeno TestClientem.
+4. **(sloučeno do #3)** — editor, hard toggle, „jen těžké".
 5. **Tisk** — `/print?scope=block:A|subject:VII|card:{id}` s print CSS.
 6. **Deploy** — `deploy.sh`, systemd unit, nginx server blok, certbot.
 
@@ -71,4 +77,8 @@ python -m venv .venv
 pip install -r requirements.txt
 python -m app.importer --dry-run    # jen statistiky, bez DB
 python -m app.importer              # naplní DB (dle DATABASE_URL)
+uvicorn app.main:app --reload       # spustí web na http://127.0.0.1:8000
 ```
+
+Na serveru poběží `uvicorn app.main:app --host 127.0.0.1 --port 8090` pod systemd,
+nginx reverse-proxy na myslivost.b4u.cz (blok #6). SECRET_KEY nastav v .env.

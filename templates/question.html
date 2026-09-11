@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ q.qid }} — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<p class="crumbs">
+  <a href="/questions">Otázky</a> ›
+  <a href="/questions/subject/{{ subject.slug }}"><span class="roman">{{ subject.roman }}</span> {{ subject.title }}</a> ›
+  {% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}
+</p>
+
+{% if saved %}<p class="toast">Uloženo ✓</p>{% endif %}
+
+<div class="qhead">
+  <span class="code">{{ q.code }}</span>
+  <h1>{{ q.text }}</h1>
+</div>
+
+<form method="post" action="/questions/{{ q.id }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+
+  <div class="editor-head">
+    <label class="editor-label" for="answer">Tvoje odpověď</label>
+    {% if has_master %}<button type="button" class="btn-ghost" id="take-master">Převzít vzor →</button>{% endif %}
+  </div>
+  <textarea id="answer" name="answer_md" rows="12" placeholder="Sem napiš vlastní odpověď (Markdown)…">{{ answer_md }}</textarea>
+
+  <label class="hardline">
+    <input type="checkbox" name="hard" value="1" {% if hard %}checked{% endif %}>
+    Označit jako <strong>těžkou</strong> ⚑
+  </label>
+
+  <div class="editor-actions">
+    <button type="submit">Uložit</button>
+    {% if prev_q %}<a class="btn-ghost" href="/questions/{{ prev_q.id }}">← {{ prev_q.qid }}</a>{% endif %}
+    {% if next_q %}<a class="btn-ghost" href="/questions/{{ next_q.id }}">{{ next_q.qid }} →</a>{% endif %}
+  </div>
+</form>
+
+{% if has_master %}
+<section class="master">
+  <h3>Vzor <span class="muted">(původní odpověď, jen ke čtení)</span></h3>
+  <div class="master-body">{{ master_html|safe }}</div>
+</section>
+<textarea id="master-raw" hidden>{{ master_raw }}</textarea>
+<script>
+  document.getElementById('take-master')?.addEventListener('click', function () {
+    var a = document.getElementById('answer'), m = document.getElementById('master-raw');
+    if (!a.value.trim() || confirm('Přepsat rozepsanou odpověď vzorem?')) a.value = m.value;
+    a.focus();
+  });
+</script>
+{% else %}
+<p class="muted">K této otázce není původní vzor — napiš vlastní odpověď.</p>
+{% endif %}
+{% endblock %}

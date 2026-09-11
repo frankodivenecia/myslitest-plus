@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Přehled — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Přehled</h1>
+
+<div class="stats">
+  <div class="stat"><span class="num">{{ total }}</span><span class="lbl">otázek celkem</span></div>
+  <div class="stat"><span class="num">{{ answered }}</span><span class="lbl">tvých odpovědí</span></div>
+  <div class="stat"><span class="num">{{ hard }}</span><span class="lbl">těžkých</span></div>
+</div>
+
+<p class="muted">Podle typu:
+  {% for k, v in types.items() %}<strong>{{ k }}</strong>&nbsp;{{ v }}{% if not loop.last %} · {% endif %}{% endfor %}
+</p>
+
+<h2>Předměty</h2>
+<ul class="subjects">
+  {% for s in subjects %}
+  <li><span class="roman">{{ s.roman }}</span> {{ s.title }}
+      <span class="muted">[{{ s.part_kind }}] · {{ s.cards|length }} karet</span></li>
+  {% endfor %}
+</ul>
+
+<p class="muted">Prohlížeč otázek, editor odpovědí a pohled „jen těžké" přidává další blok.</p>
+{% endblock %}

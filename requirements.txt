@@ -2,15 +2,15 @@
 fastapi
 uvicorn[standard]
 jinja2
-python-multipart          # form posts (login, editor)
-itsdangerous              # signed session cookies (Starlette SessionMiddleware)
+python-multipart          # form posty (login, registrace, editor)
+itsdangerous              # podepsané session cookie (Starlette SessionMiddleware)
 
 # DB
 sqlalchemy>=2.0
 psycopg[binary]           # PostgreSQL v produkci (lokálně stačí vestavěné sqlite3)
 
 # Auth
-passlib[bcrypt]
+bcrypt                    # hashování hesel napřímo (bez passlibu — Py3.14/bcrypt5)
 
 # Obsah / render
 pyyaml                    # front matter při importu katalogu
