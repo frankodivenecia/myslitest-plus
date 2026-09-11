@@ -16,8 +16,10 @@
 <h2>Předměty</h2>
 <ul class="subjects">
   {% for s in subjects %}
-  <li><span class="roman">{{ s.roman }}</span> {{ s.title }}
-      <span class="muted">[{{ s.part_kind }}] · {{ s.cards|length }} karet</span></li>
+  <li>
+    <a class="subj-link" href="/questions/subject/{{ s.slug }}"><span class="roman">{{ s.roman }}</span> {{ s.title }}</a>
+    <span class="muted">{{ s.cards|length }} {{ 'okruhů' if s.part_kind == 'okruh' else 'karet' }}</span>
+  </li>
   {% endfor %}
 </ul>
 

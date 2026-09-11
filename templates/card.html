@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }} — {{ subject.title }}{% endblock %}
+{% block content %}
+<p class="crumbs">
+  <a href="/questions">Otázky</a> ›
+  <a href="/questions/subject/{{ subject.slug }}"><span class="roman">{{ subject.roman }}</span> {{ subject.title }}</a> ›
+  {% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}
+</p>
+<h1>{% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}</h1>
+
+<ul class="qlist">
+  {% for q in card.questions %}
+  {% set r = state.get(q.id) %}
+  {% set answered = r and r.answer_md %}
+  <li class="qrow">
+    <a class="qlink" href="/questions/{{ q.id }}">
+      <span class="dot {{ 'on' if answered else 'off' }}" title="{{ 'zodpovězeno' if answered else 'zatím prázdné' }}"></span>
+      <span class="qid">{{ q.qid }}</span>
+      <span class="qtext">{{ q.text }}</span>
+    </a>
+    <form class="hardtoggle" method="post" action="/questions/{{ q.id }}/hard">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <input type="hidden" name="back" value="/questions/card/{{ card.id }}">
+      <button type="submit" class="flag {{ 'active' if r and r.hard else '' }}" title="Označit jako těžké">⚑</button>
+    </form>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

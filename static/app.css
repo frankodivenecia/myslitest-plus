@@ -174,3 +174,17 @@ textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); 
 }
 .master-body :first-child { margin-top: 0; }
 .master-body :last-child { margin-bottom: 0; }
+
+/* --- karty/okruhy (blok #4) --- */
+.cardlist { list-style: none; padding: 0; margin: .6rem 0; }
+.cardlist li { border-bottom: 1px solid var(--line); }
+.cardlink {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .7rem .3rem; text-decoration: none; color: var(--ink);
+}
+.cardlink:hover .cardname { text-decoration: underline; }
+.cardname { font-weight: 600; }
+.prog { display: flex; align-items: center; gap: .6rem; color: var(--muted); font-size: .85rem; white-space: nowrap; }
+.bar { width: 120px; height: 7px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.bar .fill { display: block; height: 100%; background: var(--accent); }
+.subjects .subj-link { text-decoration: none; font-weight: 600; }

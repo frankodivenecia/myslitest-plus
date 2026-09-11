@@ -1,7 +1,8 @@
 """Prohlížeč otázek a editor odpovědí.
 
+Navigace: předmět → karta/okruh → otázka → editor.
 - katalog (Subject/Card/Question) je sdílený a jen ke čtení
-- Question.reference_md = původní odpověď = MASTER (jen ke čtení, nikdy se nepřepíše)
+- Question.reference_md = původní odpověď = MASTER (jen ke čtení)
 - UserQuestion.answer_md = tvoje vlastní odpověď (per-user)
 - UserQuestion.hard = tvoje značka „těžká" (per-user)
 """
@@ -26,6 +27,10 @@ def _uq(db: Session, uid: int, qid: int) -> UserQuestion | None:
     return db.query(UserQuestion).filter_by(user_id=uid, question_id=qid).one_or_none()
 
 
+def _state(db: Session, uid: int) -> dict[int, UserQuestion]:
+    return {r.question_id: r for r in db.query(UserQuestion).filter_by(user_id=uid).all()}
+
+
 def _render_md(text: str | None) -> str:
     return md.markdown(text, extensions=["extra", "sane_lists"]) if text else ""
 
@@ -34,18 +39,15 @@ def _render_md(text: str | None) -> str:
 def questions_index(request: Request, db: Session = Depends(get_db)):
     uid = current_user(request)["id"]
     subjects = db.query(Subject).order_by(Subject.weight).all()
+    st = _state(db, uid)
     stats: dict[int, dict] = {}
     for s in subjects:
-        qids = [q.id for c in s.cards for q in c.questions]
-        answered = hard = 0
-        if qids:
-            answered = (db.query(func.count(UserQuestion.id)).filter(
-                UserQuestion.user_id == uid, UserQuestion.question_id.in_(qids),
-                UserQuestion.answer_md.isnot(None), UserQuestion.answer_md != "").scalar() or 0)
-            hard = (db.query(func.count(UserQuestion.id)).filter(
-                UserQuestion.user_id == uid, UserQuestion.question_id.in_(qids),
-                UserQuestion.hard.is_(True)).scalar() or 0)
-        stats[s.id] = {"total": len(qids), "answered": answered, "hard": hard}
+        qs = [q for c in s.cards for q in c.questions]
+        stats[s.id] = {
+            "total": len(qs),
+            "answered": sum(1 for q in qs if st.get(q.id) and st[q.id].answer_md),
+            "hard": sum(1 for q in qs if st.get(q.id) and st[q.id].hard),
+        }
     return templates.TemplateResponse(request, "questions.html", {"subjects": subjects, "stats": stats})
 
 
@@ -55,10 +57,29 @@ def subject_view(slug: str, request: Request, db: Session = Depends(get_db)):
     s = db.query(Subject).filter_by(slug=slug).one_or_none()
     if not s:
         return RedirectResponse("/questions", status_code=303)
-    state = {r.question_id: r for r in db.query(UserQuestion).filter_by(user_id=uid).all()}
+    st = _state(db, uid)
+    cards = []
+    for c in s.cards:
+        qs = c.questions
+        cards.append({
+            "card": c,
+            "total": len(qs),
+            "answered": sum(1 for q in qs if st.get(q.id) and st[q.id].answer_md),
+            "hard": sum(1 for q in qs if st.get(q.id) and st[q.id].hard),
+        })
+    return templates.TemplateResponse(request, "subject.html", {"subject": s, "cards": cards})
+
+
+@router.get("/questions/card/{card_id}")
+def card_view(card_id: int, request: Request, db: Session = Depends(get_db)):
+    uid = current_user(request)["id"]
+    c = db.get(Card, card_id)
+    if not c:
+        return RedirectResponse("/questions", status_code=303)
     return templates.TemplateResponse(
-        request, "subject.html",
-        {"subject": s, "state": state, "csrf_token": get_csrf_token(request)},
+        request, "card.html",
+        {"card": c, "subject": c.subject, "state": _state(db, uid),
+         "csrf_token": get_csrf_token(request)},
     )
 
 
@@ -69,7 +90,7 @@ def question_view(qid: int, request: Request, saved: int = 0, db: Session = Depe
     if not q:
         return RedirectResponse("/questions", status_code=303)
     card: Card = q.card
-    sibs = card.questions  # seřazeno dle ordinal
+    sibs = card.questions
     idx = next((i for i, x in enumerate(sibs) if x.id == qid), None)
     prev_q = sibs[idx - 1] if idx not in (None, 0) else None
     next_q = sibs[idx + 1] if idx is not None and idx + 1 < len(sibs) else None
@@ -143,6 +164,4 @@ def hard_list(request: Request, db: Session = Depends(get_db)):
     rows.sort(key=lambda q: (q.card.subject.weight, q.card.number, q.ordinal))
     answered = {r.question_id: bool(r.answer_md)
                 for r in db.query(UserQuestion).filter_by(user_id=uid).all()}
-    return templates.TemplateResponse(
-        request, "hard.html", {"questions": rows, "answered": answered}
-    )
+    return templates.TemplateResponse(request, "hard.html", {"questions": rows, "answered": answered})
