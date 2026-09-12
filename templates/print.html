@@ -14,25 +14,21 @@
 
   <article class="printdoc">
     <h1 class="printtitle">{{ doc_title }}</h1>
-
+    {% if not groups %}
+    <p class="muted">Zatím tu nemáš žádnou vlastní odpověď k tisku.</p>
+    {% else %}
     {% for g in groups %}
     <section class="printgroup">
       <h2>{{ g.heading }}</h2>
       {% for it in g.rows %}
       <div class="pq">
         <p class="pq-q"><span class="pq-code">{{ it.code }} · {{ it.qid }}</span> {{ it.text }}</p>
-        {% if it.answer_html %}
-        <div class="pq-a{% if it.is_master %} is-master{% endif %}">
-          {% if it.is_master %}<span class="pq-tag">vzor</span>{% endif %}
-          {{ it.answer_html|safe }}
-        </div>
-        {% else %}
-        <div class="pq-a pq-empty">— bez odpovědi —</div>
-        {% endif %}
+        <div class="pq-a">{{ it.answer_html|safe }}</div>
       </div>
       {% endfor %}
     </section>
     {% endfor %}
+    {% endif %}
   </article>
 </body>
 </html>

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block title %}Těžké — {{ APP_NAME }}{% endblock %}
 {% block content %}
-<h1>Těžké otázky</h1>
+<h1>Těžké otázky
+  <a class="btn-ghost print-btn" href="/print/hard" target="_blank">Tisk (PDF)</a></h1>
 {% if not questions %}
 <p class="muted">Zatím sis žádnou otázku neoznačil(a) jako těžkou. Označíš je vlaječkou ⚑ u otázky.</p>
 {% else %}

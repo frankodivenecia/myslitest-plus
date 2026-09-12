@@ -2,14 +2,10 @@
 {% block title %}Tisk — {{ APP_NAME }}{% endblock %}
 {% block content %}
 <h1>Tisk do PDF</h1>
-<p class="muted">Otevře tiskovou stránku — v prohlížeči pak <strong>Ctrl+P → Uložit jako PDF</strong>. Tiskne se tvoje odpověď; kde chybí, doplní se vzor.</p>
+<p class="muted">Tiskne <strong>jen tvoje odpovědi</strong> (otázky bez odpovědi se vynechají). V prohlížeči pak <strong>Ctrl+P → Uložit jako PDF</strong>.</p>
 
-<h2>Podle typu</h2>
-<p class="printlinks">
-  <a class="btn-ghost" href="/print/block/A" target="_blank">Všechny A</a>
-  <a class="btn-ghost" href="/print/block/B" target="_blank">Všechny B</a>
-  <a class="btn-ghost" href="/print/block/C" target="_blank">Všechny C</a>
-</p>
+<h2>Těžké</h2>
+<p><a class="btn-ghost" href="/print/hard" target="_blank">Tisk těžkých otázek</a></p>
 
 <h2>Podle předmětu</h2>
 <ul class="subjects">
