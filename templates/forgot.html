@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Zapomenuté heslo — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="card auth">
+  <h1>Zapomenuté heslo</h1>
+  {% if sent %}
+  <p class="toast">Pokud účet s tímto e-mailem existuje, poslali jsme na něj odkaz pro nastavení nového hesla. Zkontroluj schránku (i spam).</p>
+  <p class="muted"><a href="/login">Zpět na přihlášení</a></p>
+  {% else %}
+  <p class="lead">Zadej e-mail účtu. Pošleme na něj odkaz pro nastavení nového hesla.</p>
+  {% if error %}<p class="err">{{ error }}</p>{% endif %}
+  <form method="post" action="/forgot">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>E-mail<input type="email" name="email" required autofocus autocomplete="username"></label>
+    <button type="submit">Poslat odkaz</button>
+  </form>
+  <p class="muted"><a href="/login">Zpět na přihlášení</a></p>
+  {% endif %}
+</div>
+{% endblock %}

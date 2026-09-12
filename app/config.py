@@ -19,6 +19,7 @@ class Settings:
     database_url: str = os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR / 'myslitest.db'}")
     secret_key: str = os.getenv("SECRET_KEY", "dev-insecure-zmenit-v-produkci")
     content_dir: Path = Path(os.getenv("CONTENT_DIR", str(BASE_DIR / "content")))
+    site_base_url: str = os.getenv("BASE_URL", "https://myslivost.b4u.cz").rstrip("/")
 
 
 settings = Settings()

@@ -2,11 +2,12 @@
 {% block title %}Přihlášení — {{ APP_NAME }}{% endblock %}
 {% block content %}
 <div class="card auth">
-  <h1>MyslíTest</h1>
+  <h1>{{ APP_NAME }}</h1>
   <p class="lead">Osobní příprava na ústní zkoušku z myslivosti (myslivecký kurz
   LDF MENDELU). 1310 otázek ze 7 předmětů — vlastní odpovědi si píšeš sám
   a označuješ si, co je pro tebe těžké.</p>
 
+  {% if reset %}<p class="toast">Heslo bylo změněno. Přihlas se novým heslem.</p>{% endif %}
   {% if error %}<p class="err">{{ error }}</p>{% endif %}
 
   <form method="post" action="/login">
@@ -20,6 +21,7 @@
     <button type="submit">Přihlásit</button>
   </form>
 
+  <p class="muted"><a href="/forgot">Zapomenuté heslo?</a></p>
   <p class="muted">Nemáš účet? <a href="/register">Zaregistruj se</a>.</p>
 </div>
 {% endblock %}

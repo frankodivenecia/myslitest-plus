@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Nové heslo — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="card auth">
+  <h1>Nastavit nové heslo</h1>
+  {% if not valid %}
+  <p class="err">Odkaz je neplatný nebo vypršel (platí 1 hodinu a jen jednou).</p>
+  <p class="muted"><a href="/forgot">Požádat o nový odkaz</a></p>
+  {% else %}
+  {% if error %}<p class="err">{{ error }}</p>{% endif %}
+  <form method="post" action="/reset/{{ token }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <label>Nové heslo <span class="muted">(aspoň 8 znaků)</span>
+      <input type="password" name="password" required minlength="8" autofocus autocomplete="new-password"></label>
+    <label>Heslo znovu
+      <input type="password" name="password2" required minlength="8" autocomplete="new-password"></label>
+    <button type="submit">Nastavit heslo</button>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

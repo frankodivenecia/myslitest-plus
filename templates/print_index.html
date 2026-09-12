@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Tisk — {{ APP_NAME }}{% endblock %}
+{% block content %}
+<h1>Tisk do PDF</h1>
+<p class="muted">Otevře tiskovou stránku — v prohlížeči pak <strong>Ctrl+P → Uložit jako PDF</strong>. Tiskne se tvoje odpověď; kde chybí, doplní se vzor.</p>
+
+<h2>Podle typu</h2>
+<p class="printlinks">
+  <a class="btn-ghost" href="/print/block/A" target="_blank">Všechny A</a>
+  <a class="btn-ghost" href="/print/block/B" target="_blank">Všechny B</a>
+  <a class="btn-ghost" href="/print/block/C" target="_blank">Všechny C</a>
+</p>
+
+<h2>Podle předmětu</h2>
+<ul class="subjects">
+  {% for s in subjects %}
+  <li>
+    <a href="/print/subject/{{ s.slug }}" target="_blank"><span class="roman">{{ s.roman }}</span> {{ s.title }}</a>
+    <span class="muted">celý předmět</span>
+  </li>
+  {% endfor %}
+</ul>
+<p class="muted">Jednotlivou kartu/okruh vytiskneš tlačítkem „Tisk (PDF)" přímo na její stránce.</p>
+{% endblock %}

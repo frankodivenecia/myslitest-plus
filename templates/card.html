@@ -6,7 +6,8 @@
   <a href="/questions/subject/{{ subject.slug }}"><span class="roman">{{ subject.roman }}</span> {{ subject.title }}</a> ›
   {% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}
 </p>
-<h1>{% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}</h1>
+<h1>{% if subject.part_kind == 'okruh' %}Okruh{% else %}Karta{% endif %} {{ card.number }}
+  <a class="btn-ghost print-btn" href="/print/card/{{ card.id }}" target="_blank">Tisk (PDF)</a></h1>
 
 <ul class="qlist">
   {% for q in card.questions %}

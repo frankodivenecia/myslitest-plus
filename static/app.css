@@ -188,3 +188,31 @@ textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); 
 .bar { width: 120px; height: 7px; background: var(--line); border-radius: 4px; overflow: hidden; }
 .bar .fill { display: block; height: 100%; background: var(--accent); }
 .subjects .subj-link { text-decoration: none; font-weight: 600; }
+
+/* --- tisk (blok #5) --- */
+.print-btn { font-size: .8rem; padding: .3rem .6rem; vertical-align: middle; margin-left: .6rem; }
+.printlinks { display: flex; gap: .6rem; flex-wrap: wrap; }
+
+.printbar { display: flex; gap: 1rem; align-items: center; padding: .8rem 1.2rem; background: var(--card); border-bottom: 1px solid var(--line); }
+.printbody { background: #fff; }
+.printdoc { max-width: 800px; margin: 1.5rem auto; padding: 0 1.2rem; }
+.printtitle { font-size: 1.4rem; margin: 0 0 1rem; }
+.printgroup { margin: 0 0 1.4rem; }
+.printgroup h2 { font-size: 1.05rem; border-bottom: 2px solid var(--line); padding-bottom: .2rem; }
+.pq { margin: 0 0 .9rem; page-break-inside: avoid; }
+.pq-q { font-weight: 600; margin: .5rem 0 .25rem; }
+.pq-code { color: var(--muted); font-weight: 400; font-size: .8rem; margin-right: .3rem; }
+.pq-a { margin-left: .2rem; }
+.pq-a.is-master { color: #444; }
+.pq-a.pq-empty { color: var(--muted); font-style: italic; }
+.pq-tag { display: inline-block; font-size: .7rem; background: #f0ead9; color: #8a6d1f; border-radius: 4px; padding: 0 .35rem; margin-right: .4rem; vertical-align: middle; }
+.pq-a :first-child { margin-top: 0; }
+
+@media print {
+  .noprint { display: none !important; }
+  .printdoc { max-width: none; margin: 0; padding: 0; }
+  body { font-size: 11pt; }
+  .printgroup { page-break-inside: auto; }
+  .printgroup h2 { page-break-after: avoid; }
+  a { color: inherit; text-decoration: none; }
+}

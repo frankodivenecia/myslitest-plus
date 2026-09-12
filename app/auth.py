@@ -12,14 +12,16 @@ import secrets
 
 import bcrypt
 from fastapi import Request
+from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 
+from .config import settings
 from .models import SessionLocal, User
 
 SESSION_USER_KEY = "user"
 SESSION_CSRF_KEY = "csrf"
 
 # Cesty dostupné bez přihlášení
-PUBLIC_PREFIXES = ("/login", "/register", "/logout", "/health", "/static", "/favicon")
+PUBLIC_PREFIXES = ("/login", "/register", "/logout", "/forgot", "/reset", "/health", "/static", "/favicon")
 
 
 def get_db():
@@ -85,3 +87,33 @@ def get_csrf_token(request: Request) -> str:
 def validate_csrf(request: Request, form_token: str) -> bool:
     expected = request.session.get(SESSION_CSRF_KEY, "")
     return bool(form_token) and bool(expected) and secrets.compare_digest(form_token, expected)
+
+
+# --- reset hesla (podepsaný časově omezený token, jednorázový přes otisk hesla) ---
+_reset_serializer = URLSafeTimedSerializer(settings.secret_key, salt="myslitest-pwd-reset")
+
+
+def _fp(user: User) -> str:
+    return (user.password_hash or "")[-16:]
+
+
+def make_reset_token(user: User) -> str:
+    return _reset_serializer.dumps({"uid": user.id, "fp": _fp(user)})
+
+
+def load_reset_token(token: str, max_age: int = 3600):
+    try:
+        return _reset_serializer.loads(token, max_age=max_age)
+    except (BadSignature, SignatureExpired):
+        return None
+
+
+def reset_token_user(db, token: str):
+    """Vrátí User, pokud je token platný a odpovídá aktuálnímu heslu (jednorázovost)."""
+    data = load_reset_token(token)
+    if not data:
+        return None
+    user = db.get(User, data.get("uid"))
+    if not user or data.get("fp") != _fp(user):
+        return None
+    return user

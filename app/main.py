@@ -19,9 +19,10 @@ from .config import BASE_DIR, settings
 from .models import Base, engine
 from .routers import auth as auth_router
 from .routers import dashboard as dashboard_router
+from .routers import printing as printing_router
 from .routers import questions as questions_router
 
-app = FastAPI(title="MyslíTest")
+app = FastAPI(title="MyslivecZkouška")
 
 app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
 
@@ -63,6 +64,7 @@ def _startup():
 app.include_router(auth_router.router)
 app.include_router(dashboard_router.router)
 app.include_router(questions_router.router)
+app.include_router(printing_router.router)
 
 
 @app.get("/")
