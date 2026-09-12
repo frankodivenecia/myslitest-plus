@@ -9,10 +9,10 @@
 
 ## Soustava vylučovací, dýchací a cévní
 
-1. Jakou funkci plní soustava vylučovací a z čeho se skládá?
-2. Jakou funkci plní dýchací a cévní soustava a z čeho se skládají?
+1. [Jakou funkci plní soustava vylučovací a z čeho se skládá?](b1/index.html)
+2. [Jakou funkci plní dýchací a cévní soustava a z čeho se skládají?](b2/index.html)
 
 ## Hlavní druhy ptáků škodících v myslivosti
 
-1. Vyjmenujte hlavní druhy ptáků škodících v myslivosti
-2. Jakým způsobem a jaké škody mohou ptáci způsobovat?
+1. [Vyjmenujte hlavní druhy ptáků škodících v myslivosti](c1/index.html)
+2. [Jakým způsobem a jaké škody mohou ptáci způsobovat?](c2/index.html)

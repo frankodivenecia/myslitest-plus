@@ -8,11 +8,11 @@
 
 ## Kdo může v honitbě lovit zvěř
 
-1. Kdo může v honitbě lovit zvěř?
-2. Co musí mít u sebe osoba lovící zvěř v honitbě?
-3. Kdo může kontrolovat osoby lovící v honitbě?
+1. [Kdo může v honitbě lovit zvěř?](b1/index.html)
+2. [Co musí mít u sebe osoba lovící zvěř v honitbě?](b2/index.html)
+3. [Kdo může kontrolovat osoby lovící v honitbě?](b3/index.html)
 
 ## Ochrana zvířat proti týrání
 
-1. Jaký je účel zákona na ochranu zvířat proti týrání a které činnosti jsou považovány za týrání zvířat?
-2. Jaké jsou zákonné důvody usmrcování zvířat a které metody jsou zakázané?
+1. [Jaký je účel zákona na ochranu zvířat proti týrání a které činnosti jsou považovány za týrání zvířat?](c1/index.html)
+2. [Jaké jsou zákonné důvody usmrcování zvířat a které metody jsou zakázané?](c2/index.html)

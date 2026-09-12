@@ -8,11 +8,11 @@
 
 ## Troubení na mysliveckých akcích
 
-1. Zhodnoťte význam troubení při mysliveckých akcích.
-2. Které nástroje se používají pro troubení mysliveckých skladeb?
-3. Uveďte příklady mysliveckých skladeb určených pro lovecké, slavnostní a společenské příležitosti.
+1. [Zhodnoťte význam troubení při mysliveckých akcích.](b1/index.html)
+2. [Které nástroje se používají pro troubení mysliveckých skladeb?](b2/index.html)
+3. [Uveďte příklady mysliveckých skladeb určených pro lovecké, slavnostní a společenské příležitosti.](b3/index.html)
 
 ## Myslivost v malířství a grafice
 
-1. V kterých výtvarných oborech se projevil vliv myslivosti?
-2. Kteří naši malíři se věnovali myslivecké tematice?
+1. [V kterých výtvarných oborech se projevil vliv myslivosti?](c1/index.html)
+2. [Kteří naši malíři se věnovali myslivecké tematice?](c2/index.html)

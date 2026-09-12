@@ -8,11 +8,11 @@
 
 ## Myslivost v 19. století
 
-1. Vyjmenujte hlavní události v dějinách myslivosti v 19. století.
-2. Jmenujte známé české puškaře a literáty 19. století.
-3. Jak se mění lovecké metody v průběhu 19. století?
+1. [Vyjmenujte hlavní události v dějinách myslivosti v 19. století.](b1/index.html)
+2. [Jmenujte známé české puškaře a literáty 19. století.](b2/index.html)
+3. [Jak se mění lovecké metody v průběhu 19. století?](b3/index.html)
 
 ## Práce myslivců s mládeží
 
-1. Uveďte příklady práce myslivců s mládeží a zhodnoťte její význam.
-2. Co je soutěž „O zlatou srnčí trofej"?
+1. [Uveďte příklady práce myslivců s mládeží a zhodnoťte její význam.](c1/index.html)
+2. [Co je soutěž „O zlatou srnčí trofej“?](c2/index.html)

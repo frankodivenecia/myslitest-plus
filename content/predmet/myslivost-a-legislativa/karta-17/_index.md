@@ -8,12 +8,12 @@
 
 ## Povinnosti uživatele honitby vzhledem k dohledávce a dosledu
 
-1. Jaké jsou povinnosti uživatele honitby při dohledávce a dosledu zvěře?
-2. Komu patří dohledaná zvěř, která přeběhla nebo přeletěla do cizí honitby nebo na nehonební pozemek?
-3. Co je třeba učinit před provedením dohledávky poraněné zvěře, která přeběhla nebo přeletěla do cizí honitby nebo na nehonební pozemek?
-4. Kdy je nutno provést dohledávku zvěře na společných honech?
+1. [Jaké jsou povinnosti uživatele honitby při dohledávce a dosledu zvěře?](b1/index.html)
+2. [Komu patří dohledaná zvěř, která přeběhla nebo přeletěla do cizí honitby nebo na nehonební pozemek?](b2/index.html)
+3. [Co je třeba učinit před provedením dohledávky poraněné zvěře, která přeběhla nebo přeletěla do cizí honitby nebo na nehonební pozemek?](b3/index.html)
+4. [Kdy je nutno provést dohledávku zvěře na společných honech?](b4/index.html)
 
 ## Omezení výkonu myslivosti v přírodních rezervacích
 
-1. Co jsou to národní přírodní rezervace a přírodní rezervace?
-2. Jaká jsou v národních přírodních rezervacích omezení výkonu práva myslivosti?
+1. [Co jsou to národní přírodní rezervace a přírodní rezervace?](c1/index.html)
+2. [Jaká jsou v národních přírodních rezervacích omezení výkonu práva myslivosti?](c2/index.html)

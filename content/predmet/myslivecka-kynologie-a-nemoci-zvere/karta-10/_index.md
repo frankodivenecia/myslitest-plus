@@ -8,11 +8,11 @@
 
 ## Péče o loveckého psa
 
-1. Jak by měl vypadat kotec a bouda pro psa, upravuje to legislativa?
-2. Jaké jsou dva základní přístupy k výživě psa?
-3. Jak vypadá denní péče o psa, co a jak často se provádí?
+1. [Jak by měl vypadat kotec a bouda pro psa, upravuje to legislativa?](b1/index.html)
+2. [Jaké jsou dva základní přístupy k výživě psa?](b2/index.html)
+3. [Jak vypadá denní péče o psa, co a jak často se provádí?](b3/index.html)
 
 ## Aujezskyho choroba (pseudovzteklina)
 
-1. Charakterizujte Aujezskyho chorobu a popište příznaky onemocnění u zvěře.
-2. Popište nebezpečí Aujezskyho choroby pro psy, následky nakažení psa a prevenci.
+1. [Charakterizujte Aujezskyho chorobu a popište příznaky onemocnění u zvěře.](c1/index.html)
+2. [Popište nebezpečí Aujezskyho choroby pro psy, následky nakažení psa a prevenci.](c2/index.html)

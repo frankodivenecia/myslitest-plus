@@ -8,11 +8,11 @@
 
 ## Hlavní části kulovnice
 
-1. Jaké jsou hlavní části kulovnice?
-2. Pojmenujte další části kulovnice.
-3. Jak funguje spouštěcí, pojistný, zásobovací, vytahovací a vyhazovací mechanismus různých typů kulovnic?
+1. [Jaké jsou hlavní části kulovnice?](b1/index.html)
+2. [Pojmenujte další části kulovnice.](b2/index.html)
+3. [Jak funguje spouštěcí, pojistný, zásobovací, vytahovací a vyhazovací mechanismus různých typů kulovnic?](b3/index.html)
 
 ## Krytí brokovnice
 
-1. Jak zjišťujeme krytí brokovnice?
-2. Na co má krytí brokovnice vliv v praxi?
+1. [Jak zjišťujeme krytí brokovnice?](c1/index.html)
+2. [Na co má krytí brokovnice vliv v praxi?](c2/index.html)

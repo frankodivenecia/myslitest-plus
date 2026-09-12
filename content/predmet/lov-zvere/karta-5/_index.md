@@ -8,11 +8,11 @@
 
 ## Pobytové znaky spárkaté zvěře
 
-1. Jak se liší stopa daňka od ostatní spárkaté zvěře?
-2. Jak se liší stopa muflona od ostatní spárkaté zvěře?
-3. Vyjmenujte některé zvláštnosti ve stopě vzácných druhů spárkaté zvěře.
+1. [Jak se liší stopa daňka od ostatní spárkaté zvěře?](b1/index.html)
+2. [Jak se liší stopa muflona od ostatní spárkaté zvěře?](b2/index.html)
+3. [Vyjmenujte některé zvláštnosti ve stopě vzácných druhů spárkaté zvěře.](b3/index.html)
 
 ## Drobné trofeje
 
-1. Uveďte příklady drobných trofejí ze spárkaté zvěře.
-2. Uveďte příklady trofejí z drobné zvěře.
+1. [Uveďte příklady drobných trofejí ze spárkaté zvěře.](c1/index.html)
+2. [Uveďte příklady trofejí z drobné zvěře.](c2/index.html)

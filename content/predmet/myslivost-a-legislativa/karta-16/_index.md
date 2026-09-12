@@ -8,11 +8,11 @@
 
 ## Povinnosti uživatelů honiteb při zazvěřování honiteb
 
-1. Kdo je oprávněn vypouštět zvěř do honitby a kdo její vypouštění povoluje?
-2. Jaké jsou povinnosti uživatele honitby při jejím zazvěřování?
-3. Kterou zvěř je do honitby zakázáno vypouštět?
+1. [Kdo je oprávněn vypouštět zvěř do honitby a kdo její vypouštění povoluje?](b1/index.html)
+2. [Jaké jsou povinnosti uživatele honitby při jejím zazvěřování?](b2/index.html)
+3. [Kterou zvěř je do honitby zakázáno vypouštět?](b3/index.html)
 
 ## Druhy srstnaté zvěře chráněné podle zákona na ochranu přírody a krajiny
 
-1. Do jakých skupin se dělí zvláště chránění živočichové a které druhy srstnaté zvěře jsou mezi zvláště chráněné živočichy zařazeny?
-2. Co je základem obecné ochrany živočichů?
+1. [Do jakých skupin se dělí zvláště chránění živočichové a které druhy srstnaté zvěře jsou mezi zvláště chráněné živočichy zařazeny?](c1/index.html)
+2. [Co je základem obecné ochrany živočichů?](c2/index.html)

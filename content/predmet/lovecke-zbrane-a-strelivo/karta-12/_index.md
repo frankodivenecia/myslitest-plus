@@ -8,11 +8,11 @@
 
 ## Balistika brokového výstřelu
 
-1. Popište vnitřní a přechodovou balistiku brokového výstřelu.
-2. Popište vnější balistiku brokového výstřelu.
-3. Které aspekty mají vliv na formování brokového shluku?
+1. [Popište vnitřní a přechodovou balistiku brokového výstřelu.](b1/index.html)
+2. [Popište vnější balistiku brokového výstřelu.](b2/index.html)
+3. [Které aspekty mají vliv na formování brokového shluku?](b3/index.html)
 
 ## Údržba lovecké zbraně
 
-1. Popište čištění a ošetření lovecké zbraně.
-2. Jak ukládáme zbraně a střelivo z technického hlediska?
+1. [Popište čištění a ošetření lovecké zbraně.](c1/index.html)
+2. [Jak ukládáme zbraně a střelivo z technického hlediska?](c2/index.html)

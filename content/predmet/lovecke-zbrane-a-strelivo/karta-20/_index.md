@@ -8,11 +8,11 @@
 
 ## Chladné zbraně v myslivecké praxi
 
-1. Které chladné zbraně se v myslivecké praxi používají?
-2. Popište hlavní části, typy a výhody pevných loveckých nožů.
-3. Popište hlavní části, výhody a nevýhody zavíracích loveckých nožů.
+1. [Které chladné zbraně se v myslivecké praxi používají?](b1/index.html)
+2. [Popište hlavní části, typy a výhody pevných loveckých nožů.](b2/index.html)
+3. [Popište hlavní části, výhody a nevýhody zavíracích loveckých nožů.](b3/index.html)
 
 ## Lovecké sportovní disciplíny
 
-1. Jmenujte některé kulové lovecké soutěžní disciplíny a stručně je charakterizujte.
-2. Jmenujte některé brokové soutěžní disciplíny a stručně je charakterizujte.
+1. [Jmenujte některé kulové lovecké soutěžní disciplíny a stručně je charakterizujte.](c1/index.html)
+2. [Jmenujte některé brokové soutěžní disciplíny a stručně je charakterizujte.](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Norování, individuální zkouška z norování
 
-1. Jakou loveckou upotřebitelnost získá pes, který absolvoval bezkontaktní norování nebo individuální zkoušku z norování?
-2. Vysvětlete pojem bezkontaktní norování, průběh zkoušky a co se při něm hodnotí.
-3. Popište podmínky pro individuální zkoušku z norování.
+1. [Jakou loveckou upotřebitelnost získá pes, který absolvoval bezkontaktní norování nebo individuální zkoušku z norování?](b1/index.html)
+2. [Vysvětlete pojem bezkontaktní norování, průběh zkoušky a co se při něm hodnotí.](b2/index.html)
+3. [Popište podmínky pro individuální zkoušku z norování.](b3/index.html)
 
 ## Nakažlivé choroby zvěře
 
-1. V čem spočívá nebezpečí nakažlivých chorob a jaká opatření se přijímají?
-2. Uveďte rozdělení a příklady nakažlivých chorob zvěře.
+1. [V čem spočívá nebezpečí nakažlivých chorob a jaká opatření se přijímají?](c1/index.html)
+2. [Uveďte rozdělení a příklady nakažlivých chorob zvěře.](c2/index.html)

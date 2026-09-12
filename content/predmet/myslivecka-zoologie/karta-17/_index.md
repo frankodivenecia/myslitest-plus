@@ -8,10 +8,10 @@
 
 ## Přehled šelem
 
-1. Vysvětlete pojem šelmy.
-2. Do jakých skupin se šelmy dělí a uveďte některé zástupce.
+1. [Vysvětlete pojem šelmy.](b1/index.html)
+2. [Do jakých skupin se šelmy dělí a uveďte některé zástupce.](b2/index.html)
 
 ## Bobr evropský
 
-1. Popište bobra a jeho životní potřeby.
-2. Jaký je význam bobra a pojednejte o možných rizicích jeho přemnožení
+1. [Popište bobra a jeho životní potřeby.](c1/index.html)
+2. [Jaký je význam bobra a pojednejte o možných rizicích jeho přemnožení](c2/index.html)

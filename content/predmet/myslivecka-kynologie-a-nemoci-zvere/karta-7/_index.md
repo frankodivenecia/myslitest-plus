@@ -8,11 +8,11 @@
 
 ## Podzimní zkoušky, individuální zkoušky barvářů
 
-1. Jakou loveckou upotřebitelnost může pes získat na podzimních zkouškách a které disciplíny se na nich společně zkouší?
-2. Která plemena se mohou zúčastňovat podzimních zkoušek?
-3. K čemu kvalifikují psa úspěšně složené Individuální zkoušky barvářů?
+1. [Jakou loveckou upotřebitelnost může pes získat na podzimních zkouškách a které disciplíny se na nich společně zkouší?](b1/index.html)
+2. [Která plemena se mohou zúčastňovat podzimních zkoušek?](b2/index.html)
+3. [K čemu kvalifikují psa úspěšně složené Individuální zkoušky barvářů?](b3/index.html)
 
 ## Střečkovitost
 
-1. Charakterizujte střečkovitost.
-2. Jaké důsledky má napadení zvěře střečky?
+1. [Charakterizujte střečkovitost.](c1/index.html)
+2. [Jaké důsledky má napadení zvěře střečky?](c2/index.html)

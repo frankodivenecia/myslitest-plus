@@ -8,11 +8,11 @@
 
 ## Trávicí soustava
 
-1. Co tvoří trávicí soustavu a jak tato funguje?
-2. Popište rozdíly v trávicím traktu přežvýkavců, šelem a ptáků.
+1. [Co tvoří trávicí soustavu a jak tato funguje?](b1/index.html)
+2. [Popište rozdíly v trávicím traktu přežvýkavců, šelem a ptáků.](b2/index.html)
 
 ## Drop velký
 
-1. Popište dropa, jeho životní potřeby a projevy.
-2. Jaký je dnes areál výskytu dropa?
-3. Zhodnoťte perspektivu dropa do budoucnosti.
+1. [Popište dropa, jeho životní potřeby a projevy.](c1/index.html)
+2. [Jaký je dnes areál výskytu dropa?](c2/index.html)
+3. [Zhodnoťte perspektivu dropa do budoucnosti.](c3/index.html)

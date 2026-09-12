@@ -8,11 +8,11 @@
 
 ## Specifika lovu jelení zvěře
 
-1. Jaké jsou základní způsoby lovu jelení zvěře?
-2. Jaké jsou pobytové znaky jelení zvěře?
-3. Jaká jsou specifika lovu jelenů v říji?
+1. [Jaké jsou základní způsoby lovu jelení zvěře?](b1/index.html)
+2. [Jaké jsou pobytové znaky jelení zvěře?](b2/index.html)
+3. [Jaká jsou specifika lovu jelenů v říji?](b3/index.html)
 
 ## Z historie lovu zvěře – výrovka, zradidla
 
-1. Jak fungoval lov se zradidly?
-2. Popište princip lovu na výrovce.
+1. [Jak fungoval lov se zradidly?](c1/index.html)
+2. [Popište princip lovu na výrovce.](c2/index.html)

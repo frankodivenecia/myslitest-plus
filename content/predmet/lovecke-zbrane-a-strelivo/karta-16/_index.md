@@ -8,11 +8,11 @@
 
 ## Hlavní části brokovnice
 
-1. Jaké jsou hlavní části brokovnice?
-2. Pojmenujte další části brokovnice.
-3. Jak může být u různých typů brokovnic řešen spouštový, pojistný, vytahovací a vyhazovací mechanismus?
+1. [Jaké jsou hlavní části brokovnice?](b1/index.html)
+2. [Pojmenujte další části brokovnice.](b2/index.html)
+3. [Jak může být u různých typů brokovnic řešen spouštový, pojistný, vytahovací a vyhazovací mechanismus?](b3/index.html)
 
 ## Střední zásah a rozptyl kulovnice
 
-1. Co je to střední zásah a jak jej vyhodnocujeme?
-2. Jak zjišťujeme rozptyl kulovnice?
+1. [Co je to střední zásah a jak jej vyhodnocujeme?](c1/index.html)
+2. [Jak zjišťujeme rozptyl kulovnice?](c2/index.html)

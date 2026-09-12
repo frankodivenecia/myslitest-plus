@@ -8,11 +8,11 @@
 
 ## Mířidla a zaměřovače loveckých zbraní
 
-1. Do jakých základních skupin se dělí mířidla a zaměřovače loveckých zbraní?
-2. Jaké jsou výhody a nevýhody jednotlivých typů mířidel a zaměřovačů?
-3. Popište mechanická mířidla brokovnice a kulovnice.
+1. [Do jakých základních skupin se dělí mířidla a zaměřovače loveckých zbraní?](b1/index.html)
+2. [Jaké jsou výhody a nevýhody jednotlivých typů mířidel a zaměřovačů?](b2/index.html)
+3. [Popište mechanická mířidla brokovnice a kulovnice.](b3/index.html)
 
 ## Zápalky, středový a okrajový zápal
 
-1. Jaký je rozdíl mezi okrajovým a středovým zápalem?
-2. Jaké typy zápalek pro středový zápal znáte a čím se liší?
+1. [Jaký je rozdíl mezi okrajovým a středovým zápalem?](c1/index.html)
+2. [Jaké typy zápalek pro středový zápal znáte a čím se liší?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Volba lovecké zbraně a střeliva z hlediska podmínek lovu
 
-1. Jak volíme loveckou zbraň pro individuální lov, uveďte některé příklady.
-2. Jak volíme loveckou zbraň pro společný lov, uveďte některé příklady.
-3. Uveďte příklady volby vhodné ráže zbraně a typu střeliva v případě lovu různých druhů zvěře.
+1. [Jak volíme loveckou zbraň pro individuální lov, uveďte některé příklady.](b1/index.html)
+2. [Jak volíme loveckou zbraň pro společný lov, uveďte některé příklady.](b2/index.html)
+3. [Uveďte příklady volby vhodné ráže zbraně a typu střeliva v případě lovu různých druhů zvěře.](b3/index.html)
 
 ## Doklady související se zbraní a postup při pořizování zbraně
 
-1. Jaké jsou základní dokumenty související s držením a nošením zbraně?
-2. Jak postupujeme při koupi loveckých zbraní různých kategorií?
+1. [Jaké jsou základní dokumenty související s držením a nošením zbraně?](c1/index.html)
+2. [Jak postupujeme při koupi loveckých zbraní různých kategorií?](c2/index.html)

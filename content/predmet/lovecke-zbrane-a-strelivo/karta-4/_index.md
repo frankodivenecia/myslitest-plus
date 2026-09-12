@@ -8,11 +8,11 @@
 
 ## První pomoc při zlomeninách a zhmožděninách
 
-1. Jak ošetřujeme zlomeniny?
-2. V čem spočívá nebezpečí otevřené zlomeniny a jak ji ošetřujeme?
-3. Jak ošetřujeme poranění kloubů?
+1. [Jak ošetřujeme zlomeniny?](b1/index.html)
+2. [V čem spočívá nebezpečí otevřené zlomeniny a jak ji ošetřujeme?](b2/index.html)
+3. [Jak ošetřujeme poranění kloubů?](b3/index.html)
 
 ## Pažby loveckých zbraní
 
-1. Pojmenujte jednotlivé části pažby. Jaké tvarové typy pažeb znáte?
-2. Jaký význam má vhodně zvolená pažba lovecké zbraně?
+1. [Pojmenujte jednotlivé části pažby. Jaké tvarové typy pažeb znáte?](c1/index.html)
+2. [Jaký význam má vhodně zvolená pažba lovecké zbraně?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Lov vábením
 
-1. Jaká základní pravidla musíme dodržet při vábení?
-2. Uveďte příklady vábení spárkaté zvěře.
-3. Uveďte příklady vábení šelem a drobné zvěře.
+1. [Jaká základní pravidla musíme dodržet při vábení?](b1/index.html)
+2. [Uveďte příklady vábení spárkaté zvěře.](b2/index.html)
+3. [Uveďte příklady vábení šelem a drobné zvěře.](b3/index.html)
 
 ## Z historie lovu zvěře – tlučky a jestřábí koše
 
-1. Popište princip tlučky.
-2. Popište princip jestřábího koše.
+1. [Popište princip tlučky.](c1/index.html)
+2. [Popište princip jestřábího koše.](c2/index.html)

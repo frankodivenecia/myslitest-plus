@@ -10,10 +10,10 @@
 
 ## Přehled zvěře spárkaté
 
-1. Vysvětlete pojem srstnatá zvěř.
-2. Do jakých skupin se srstnatá zvěř dělí a uveďte některé zástupce.
+1. [Vysvětlete pojem srstnatá zvěř.](b1/index.html)
+2. [Do jakých skupin se srstnatá zvěř dělí a uveďte některé zástupce.](b2/index.html)
 
 ## Hlavní druhy savců škodících v myslivosti
 
-1. Vyjmenujte hlavní druhy savců škodících v myslivosti.
-2. Jakým způsobem mohou savci škodit a jaké škody mohou savci způsobovat?
+1. [Vyjmenujte hlavní druhy savců škodících v myslivosti.](c1/index.html)
+2. [Jakým způsobem mohou savci škodit a jaké škody mohou savci způsobovat?](c2/index.html)

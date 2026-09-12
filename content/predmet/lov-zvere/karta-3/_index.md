@@ -8,11 +8,11 @@
 
 ## Pobytové znaky šelem
 
-1. Uveďte hlavní pobytové znaky šelem.
-2. Jak se projevuje přítomnost jezevců v honitbě?
-3. Jak se projevuje přítomnost kun v honitbě?
+1. [Uveďte hlavní pobytové znaky šelem.](b1/index.html)
+2. [Jak se projevuje přítomnost jezevců v honitbě?](b2/index.html)
+3. [Jak se projevuje přítomnost kun v honitbě?](b3/index.html)
 
 ## Z historie lovu zvěře – vyháčkování, vymačkání a pírkování
 
-1. Co je pírkování, vyháčkování a vymačkání?
-2. Jsou uvedené metody ošetření drobné zvěře správné?
+1. [Co je pírkování, vyháčkování a vymačkání?](c1/index.html)
+2. [Jsou uvedené metody ošetření drobné zvěře správné?](c2/index.html)

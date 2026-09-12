@@ -8,11 +8,11 @@
 
 ## Lovecká výstroj a výbava
 
-1. Uveďte přehled základní výbavy využívané při lovu.
-2. Z čeho vychází volba oděvu, obuvi a doplňků před lovem?
-3. Z čeho vychází volba lovecké zbraně a optiky před lovem?
+1. [Uveďte přehled základní výbavy využívané při lovu.](b1/index.html)
+2. [Z čeho vychází volba oděvu, obuvi a doplňků před lovem?](b2/index.html)
+3. [Z čeho vychází volba lovecké zbraně a optiky před lovem?](b3/index.html)
 
 ## Z historie lovu zvěře – tenata, příkrajníky
 
-1. Která zvěř se dala lovit do tenat a tenátek?
-2. K čemu sloužily příkrajníky?
+1. [Která zvěř se dala lovit do tenat a tenátek?](c1/index.html)
+2. [K čemu sloužily příkrajníky?](c2/index.html)

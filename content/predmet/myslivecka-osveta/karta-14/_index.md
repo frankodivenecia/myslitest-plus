@@ -8,11 +8,11 @@
 
 ## Lov, myslivost a její etika ve vztahu k vývoji loveckých metod a pomůcek
 
-1. Jaký je trend historického vývoje myslivosti vzhledem k humánnosti lovu zvěře?
-2. Jaké byly učiněny konkrétní kroky směrem k humanizaci lovu zvěře?
-3. Jmenujte současné problémové metody lovu zvěře z hlediska myslivecké etiky.
+1. [Jaký je trend historického vývoje myslivosti vzhledem k humánnosti lovu zvěře?](b1/index.html)
+2. [Jaké byly učiněny konkrétní kroky směrem k humanizaci lovu zvěře?](b2/index.html)
+3. [Jmenujte současné problémové metody lovu zvěře z hlediska myslivecké etiky.](b3/index.html)
 
 ## Počátky mysliveckých tradic v našich zemích
 
-1. Popište stručně vývoj našich nejstarších mysliveckých tradic.
-2. S kterou postavou je spojen rozvoj mysliveckých tradic na přelomu 17. a 18. stol.?
+1. [Popište stručně vývoj našich nejstarších mysliveckých tradic.](c1/index.html)
+2. [S kterou postavou je spojen rozvoj mysliveckých tradic na přelomu 17. a 18. stol.?](c2/index.html)

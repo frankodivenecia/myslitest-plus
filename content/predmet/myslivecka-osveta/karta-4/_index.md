@@ -8,11 +8,11 @@
 
 ## Myslivecké odívání
 
-1. Jaká pravidla platí pro výběr mysliveckého oděvu a doplňků?
-2. Jaký myslivecký oděv zvolíme pro slavnostní příležitost?
-3. Jaký myslivecký oděv zvolíme pro pobyt v honitbě?
+1. [Jaká pravidla platí pro výběr mysliveckého oděvu a doplňků?](b1/index.html)
+2. [Jaký myslivecký oděv zvolíme pro slavnostní příležitost?](b2/index.html)
+3. [Jaký myslivecký oděv zvolíme pro pobyt v honitbě?](b3/index.html)
 
 ## Myslivost v sochařství a architektuře
 
-1. Jmenujte některé sochařské a architektonické památky inspirované myslivostí na našem území.
-2. Které období představovalo vrchol našeho mysliveckého sochařství a architektury?
+1. [Jmenujte některé sochařské a architektonické památky inspirované myslivostí na našem území.](c1/index.html)
+2. [Které období představovalo vrchol našeho mysliveckého sochařství a architektury?](c2/index.html)

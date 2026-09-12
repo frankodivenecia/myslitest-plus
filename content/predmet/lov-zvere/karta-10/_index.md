@@ -8,11 +8,11 @@
 
 ## Specifika lovu černé zvěře
 
-1. Jaké jsou základní způsoby lovu černé zvěře?
-2. Jaké jsou pobytové znaky černé zvěře?
-3. Jaká jsou specifika lovu černé zvěře oproti ostatní zvěři spárkaté?
+1. [Jaké jsou základní způsoby lovu černé zvěře?](b1/index.html)
+2. [Jaké jsou pobytové znaky černé zvěře?](b2/index.html)
+3. [Jaká jsou specifika lovu černé zvěře oproti ostatní zvěři spárkaté?](b3/index.html)
 
 ## Hodnocení kůží a lebek
 
-1. Popište stručně hodnocení lebek šelem.
-2. Popište stručně hodnocení kůží šelem.
+1. [Popište stručně hodnocení lebek šelem.](c1/index.html)
+2. [Popište stručně hodnocení kůží šelem.](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Smyslová soustava
 
-1. Z čeho se skládá smyslová soustava a jak funguje?
-2. Které soustavy se podílí na řízení organizmu?
+1. [Z čeho se skládá smyslová soustava a jak funguje?](b1/index.html)
+2. [Které soustavy se podílí na řízení organizmu?](b2/index.html)
 
 ## Odhad věku drobné zvěře
 
-1. Uveďte vodítka sloužící k odhadu věku drobné zvěře.
-2. Jak se odhaduje věk zajíců?
-3. Jaký praktický význam má odhad věku drobné zvěře?
+1. [Uveďte vodítka sloužící k odhadu věku drobné zvěře.](c1/index.html)
+2. [Jak se odhaduje věk zajíců?](c2/index.html)
+3. [Jaký praktický význam má odhad věku drobné zvěře?](c3/index.html)

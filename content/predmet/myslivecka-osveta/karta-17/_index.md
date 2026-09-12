@@ -8,11 +8,11 @@
 
 ## Mezinárodní myslivecké a příbuzné organizace
 
-1. Které mezinárodní organizace se vztahem k myslivosti znáte?
-2. Co znamená zkratka C.I.C.?
-3. Co znamená zkratka F.A.C.E.?
+1. [Které mezinárodní organizace se vztahem k myslivosti znáte?](b1/index.html)
+2. [Co znamená zkratka C.I.C.?](b2/index.html)
+3. [Co znamená zkratka F.A.C.E.?](b3/index.html)
 
 ## Myslivecké pověry a pověsti
 
-1. Znáte některé myslivecké pověry?
-2. Znáte některé pověsti ovlivněné myslivostí?
+1. [Znáte některé myslivecké pověry?](c1/index.html)
+2. [Znáte některé pověsti ovlivněné myslivostí?](c2/index.html)

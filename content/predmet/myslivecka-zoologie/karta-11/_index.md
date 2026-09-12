@@ -8,11 +8,11 @@
 
 ## Přehled zvěře pernaté
 
-1. Vysvětlete pojem pernatá zvěř.
-2. Do jakých skupin se pernatá zvěř dělí, uveďte některé zástupce.
+1. [Vysvětlete pojem pernatá zvěř.](b1/index.html)
+2. [Do jakých skupin se pernatá zvěř dělí, uveďte některé zástupce.](b2/index.html)
 
 ## Odhad věku spárkaté zvěře
 
-1. Jaká jsou hlavní vodítka pro odhad věku živé spárkaté zvěře a jak se využívají?
-2. Na základě jakých kritérií odhadujeme věk ulovené spárkaté zvěře?
-3. Jaký je význam odhadu věku živé a ulovené spárkaté zvěře?
+1. [Jaká jsou hlavní vodítka pro odhad věku živé spárkaté zvěře a jak se využívají?](c1/index.html)
+2. [Na základě jakých kritérií odhadujeme věk ulovené spárkaté zvěře?](c2/index.html)
+3. [Jaký je význam odhadu věku živé a ulovené spárkaté zvěře?](c3/index.html)

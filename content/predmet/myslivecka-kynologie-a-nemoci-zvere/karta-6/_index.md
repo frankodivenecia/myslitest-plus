@@ -8,11 +8,11 @@
 
 ## Dohledávka drobné zvěře
 
-1. Jak jsou psi v rámci zkoušek prověřováni vzhledem ke schopnosti dohledat drobnou zvěř?
-2. Jaký je rozdíl mezi pohozenou zvěří a tzv. „vlečkou"?
-3. Jaký je praktický význam dohledávky, kdy a jak se musí provádět?
+1. [Jak jsou psi v rámci zkoušek prověřováni vzhledem ke schopnosti dohledat drobnou zvěř?](b1/index.html)
+2. [Jaký je rozdíl mezi pohozenou zvěří a tzv. „vlečkou“?](b2/index.html)
+3. [Jaký je praktický význam dohledávky, kdy a jak se musí provádět?](b3/index.html)
 
 ## Preventivní zdravotní péče o zvěř
 
-1. Popište význam slanisek pro preventivní zdravotní péči o zvěř.
-2. Uveďte možnosti myslivců a druhy přípravků používané při preventivní zdravotní péči o zvěř.
+1. [Popište význam slanisek pro preventivní zdravotní péči o zvěř.](c1/index.html)
+2. [Uveďte možnosti myslivců a druhy přípravků používané při preventivní zdravotní péči o zvěř.](c2/index.html)

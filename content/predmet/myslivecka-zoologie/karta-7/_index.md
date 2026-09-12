@@ -11,11 +11,11 @@
 
 ## Pohlavní soustava
 
-1. Popište pohlavní soustavu samců a samic.
-2. Jak probíhá oplodnění a vývoj plodu u savců a jak u ptáků?
+1. [Popište pohlavní soustavu samců a samic.](b1/index.html)
+2. [Jak probíhá oplodnění a vývoj plodu u savců a jak u ptáků?](b2/index.html)
 
 ## Lyska černá
 
-1. Popište lysku černou, kde se s ní můžeme setkat?
-2. Jaké jsou životní potřeby a projevy lysky černé?
-3. Zhodnoťte význam lysky černé pro myslivost.
+1. [Popište lysku černou, kde se s ní můžeme setkat?](c1/index.html)
+2. [Jaké jsou životní potřeby a projevy lysky černé?](c2/index.html)
+3. [Zhodnoťte význam lysky černé pro myslivost.](c3/index.html)

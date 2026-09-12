@@ -8,12 +8,12 @@
 
 ## Druhy honiteb a způsoby jejich využití (rozdíly)
 
-1. Co se rozumí honitbou?
-2. Jaké druhy honiteb známe?
-3. Jaký je rozdíl mezi honitbou vlastní a honitbou společenstevní.
-4. Jaké jsou možné způsoby využití honiteb?
+1. [Co se rozumí honitbou?](b1/index.html)
+2. [Jaké druhy honiteb známe?](b2/index.html)
+3. [Jaký je rozdíl mezi honitbou vlastní a honitbou společenstevní.](b3/index.html)
+4. [Jaké jsou možné způsoby využití honiteb?](b4/index.html)
 
 ## Náhrada škod na zvěři
 
-1. Uveďte příklady škod způsobených na zvěři, a kdo za škodu na zvěři zodpovídá?
-2. Kdo má nárok na náhradu škody způsobené na zvěři?
+1. [Uveďte příklady škod způsobených na zvěři, a kdo za škodu na zvěři zodpovídá?](c1/index.html)
+2. [Kdo má nárok na náhradu škody způsobené na zvěři?](c2/index.html)

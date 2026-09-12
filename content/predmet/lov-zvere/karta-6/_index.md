@@ -8,11 +8,11 @@
 
 ## Popis stopy černé zvěře, porovnání se stopou jelena
 
-1. Popište stopu černé zvěře.
-2. Vysvětlete pojem buchtování a otěrkové stromy.
-3. Jaký je základní rozdíl mezi stopou jelena a silného kňoura?
+1. [Popište stopu černé zvěře.](b1/index.html)
+2. [Vysvětlete pojem buchtování a otěrkové stromy.](b2/index.html)
+3. [Jaký je základní rozdíl mezi stopou jelena a silného kňoura?](b3/index.html)
 
 ## Kelce a hubertky
 
-1. Která zvěř má kelce?
-2. Co je hubertka, kde a jak ji nalezneme?
+1. [Která zvěř má kelce?](c1/index.html)
+2. [Co je hubertka, kde a jak ji nalezneme?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## První pomoc při šoku
 
-1. Čím může být šok vyvolán?
-2. Jaké jsou příznaky šoku?
-3. Jak ošetřujeme člověka postiženého šokem?
+1. [Čím může být šok vyvolán?](b1/index.html)
+2. [Jaké jsou příznaky šoku?](b2/index.html)
+3. [Jak ošetřujeme člověka postiženého šokem?](b3/index.html)
 
 ## Střelné zbraně vzduchové, plynové a mechanické
 
-1. Popište princip fungování plynovky a vzduchovky.
-2. Na čem je založen princip fungování mechanických zbraní?
+1. [Popište princip fungování plynovky a vzduchovky.](c1/index.html)
+2. [Na čem je založen princip fungování mechanických zbraní?](c2/index.html)

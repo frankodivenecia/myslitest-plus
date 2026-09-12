@@ -8,11 +8,11 @@
 
 ## Pojem zvěř a její rozdělení
 
-1. Vysvětlete pojem zvěř a kde je definován.
-2. Uveďte, do jakých skupin se zvěř dělí.
+1. [Vysvětlete pojem zvěř a kde je definován.](b1/index.html)
+2. [Uveďte, do jakých skupin se zvěř dělí.](b2/index.html)
 
 ## Vydra říční
 
-1. Popište vydru, její životní potřeby a projevy.
-2. V kterých oblastech se vydry vyskytují?
-3. Zhodnoťte význam vyder.
+1. [Popište vydru, její životní potřeby a projevy.](c1/index.html)
+2. [V kterých oblastech se vydry vyskytují?](c2/index.html)
+3. [Zhodnoťte význam vyder.](c3/index.html)

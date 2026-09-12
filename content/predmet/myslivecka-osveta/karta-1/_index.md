@@ -9,10 +9,10 @@
 ## Přijímání mezi myslivce
 
 1. [Jaký je původ tradice přijímání mezi myslivce a koho se dnes týká?](b1/index.html)
-2. Popište stručně průběh slavnostního přijímání mezi myslivce.
-3. Čeho se musíme v průběhu přijímání mezi myslivce vyvarovat?
+2. [Popište stručně průběh slavnostního přijímání mezi myslivce.](b2/index.html)
+3. [Čeho se musíme v průběhu přijímání mezi myslivce vyvarovat?](b3/index.html)
 
 ## Odborné myslivecké písemnictví
 
-1. Jaký je význam odborné myslivecké literatury?
-2. Jmenujte některá odborná myslivecká díla.
+1. [Jaký je význam odborné myslivecké literatury?](c1/index.html)
+2. [Jmenujte některá odborná myslivecká díla.](c2/index.html)

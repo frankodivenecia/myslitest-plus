@@ -9,11 +9,11 @@
 
 ## Roh
 
-1. Popište stavbu a vývoj rohu.
-2. Jaké funkce plní rohy?
+1. [Popište stavbu a vývoj rohu.](b1/index.html)
+2. [Jaké funkce plní rohy?](b2/index.html)
 
 ## Sluka a bekasina
 
-1. Co mají společného sluka lesní a bekasina otavní a čím se liší?
-2. Popište vzhled, životní potřeby a projevy sluky.
-3. Jaký je myslivecký význam sluky a bekasiny?
+1. [Co mají společného sluka lesní a bekasina otavní a čím se liší?](c1/index.html)
+2. [Popište vzhled, životní potřeby a projevy sluky.](c2/index.html)
+3. [Jaký je myslivecký význam sluky a bekasiny?](c3/index.html)

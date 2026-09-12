@@ -8,10 +8,10 @@
 
 ## Srst
 
-1. Jaké funkce plní srst savců?
-2. Z čeho se skládá srst a ke které soustavě náleží?
+1. [Jaké funkce plní srst savců?](b1/index.html)
+2. [Z čeho se skládá srst a ke které soustavě náleží?](b2/index.html)
 
 ## Ondatra pižmová
 
-1. Popište ondatru a její životní potřeby.
-2. Jaký je význam ondatry?
+1. [Popište ondatru a její životní potřeby.](c1/index.html)
+2. [Jaký je význam ondatry?](c2/index.html)

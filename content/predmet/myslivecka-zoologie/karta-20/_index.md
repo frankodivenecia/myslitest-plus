@@ -6,11 +6,11 @@
 
 ## Peří
 
-1. Popište opeření ptáků a stavbu pera
-2. Jaká je funkce jednotlivých typů peří?
+1. [Popište opeření ptáků a stavbu pera](b1/index.html)
+2. [Jaká je funkce jednotlivých typů peří?](b2/index.html)
 
 ## Koza bezoárová a kozorožec horský
 
-1. Popište kozu bezoárovou a její životní potřeby.
-2. Co víte o kozorožci horském?
-3. Co víte o rozšíření kozy bezoárové?
+1. [Popište kozu bezoárovou a její životní potřeby.](c1/index.html)
+2. [Co víte o kozorožci horském?](c2/index.html)
+3. [Co víte o rozšíření kozy bezoárové?](c3/index.html)

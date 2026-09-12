@@ -8,11 +8,11 @@
 
 ## Pobytové znaky drobné zvěře
 
-1. Popište pobytové znaky zajíce a králíka.
-2. Popište pobytové znaky koroptve a bažanta.
-3. Popište pobytové znaky vodní pernaté zvěře.
+1. [Popište pobytové znaky zajíce a králíka.](b1/index.html)
+2. [Popište pobytové znaky koroptve a bažanta.](b2/index.html)
+3. [Popište pobytové znaky vodní pernaté zvěře.](b3/index.html)
 
 ## Z historie lovu zvěře – výhoz
 
-1. Jaký je rozdíl mezi výhozem a vývrhem?
-2. Je výhoz vhodný k ošetření spárkaté zvěře?
+1. [Jaký je rozdíl mezi výhozem a vývrhem?](c1/index.html)
+2. [Je výhoz vhodný k ošetření spárkaté zvěře?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Preventivní opatření v chovu psů a povinné očkování
 
-1. Vysvětlete pojem preventivní opatření v chovu psů a vyjmenujte jejich typy.
-2. Vyjmenujte onemocnění, proti kterým se pes běžně očkuje, vysvětlete jeho význam, a kam se zaznamenává.
-3. Jak Ize psy chránit proti cizopasníkům?
+1. [Vysvětlete pojem preventivní opatření v chovu psů a vyjmenujte jejich typy.](b1/index.html)
+2. [Vyjmenujte onemocnění, proti kterým se pes běžně očkuje, vysvětlete jeho význam, a kam se zaznamenává.](b2/index.html)
+3. [Jak Ize psy chránit proti cizopasníkům?](b3/index.html)
 
 ## Brucelóza, salmonelóza
 
-1. Charakterizujte brucelózu, uveďte příznaky a pravidla v případě podezření na nákazu brucelózou.
-2. Charakterizujte salmonelózu, uveďte příznaky a pravidla v případě podezření na nákazu salmonelózou.
+1. [Charakterizujte brucelózu, uveďte příznaky a pravidla v případě podezření na nákazu brucelózou.](c1/index.html)
+2. [Charakterizujte salmonelózu, uveďte příznaky a pravidla v případě podezření na nákazu salmonelózou.](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Honičské zkoušky a barvářské zkoušky honičů
 
-1. Jakou loveckou upotřebitelnost může pes získat na Honičských zkouškách?
-2. Které disciplíny se zkouší na Barvářských zkouškách honičů?
-3. Jaké je žádoucí chování honiče na stopě zvěře, jakou zvěř má preferovat a jak se chovat vůči živé a jak vůči zhaslé zvěři?
+1. [Jakou loveckou upotřebitelnost může pes získat na Honičských zkouškách?](b1/index.html)
+2. [Které disciplíny se zkouší na Barvářských zkouškách honičů?](b2/index.html)
+3. [Jaké je žádoucí chování honiče na stopě zvěře, jakou zvěř má preferovat a jak se chovat vůči živé a jak vůči zhaslé zvěři?](b3/index.html)
 
 ## Vzteklina
 
-1. Charakterizujte vzteklinu a popište příznaky onemocnění.
-2. Jaká pravidla platí v případě podezření na nákazu vzteklinou?
+1. [Charakterizujte vzteklinu a popište příznaky onemocnění.](c1/index.html)
+2. [Jaká pravidla platí v případě podezření na nákazu vzteklinou?](c2/index.html)

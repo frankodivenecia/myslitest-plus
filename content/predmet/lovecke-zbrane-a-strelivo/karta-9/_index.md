@@ -8,11 +8,11 @@
 
 ## Lékárnička a její obsah
 
-1. Jaký je význam lékárničky?
-2. Kdy je předepsáno nošení lékárničky?
-3. Co by mělo být obsahem lékárničky?
+1. [Jaký je význam lékárničky?](b1/index.html)
+2. [Kdy je předepsáno nošení lékárničky?](b2/index.html)
+3. [Co by mělo být obsahem lékárničky?](b3/index.html)
 
 ## Pojistky zbraní
 
-1. K čemu slouží pojistky zbraní a jaké musí splňovat požadavky?
-2. Jak jsou pojistky loveckých zbraní nejčastěji řešeny vzhledem k vnějšímu provedení?
+1. [K čemu slouží pojistky zbraní a jaké musí splňovat požadavky?](c1/index.html)
+2. [Jak jsou pojistky loveckých zbraní nejčastěji řešeny vzhledem k vnějšímu provedení?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Ochrana psa, ochranné pomůcky při práci loveckého psa
 
-1. Popište pomůcky pro pasivní ochranu loveckého psa.
-2. Popište pomůcky pro aktivní ochranu loveckého psa.
-3. Popište pomůcky psovoda pro poskytnutí podpory a ochrany loveckého psa.
+1. [Popište pomůcky pro pasivní ochranu loveckého psa.](b1/index.html)
+2. [Popište pomůcky pro aktivní ochranu loveckého psa.](b2/index.html)
+3. [Popište pomůcky psovoda pro poskytnutí podpory a ochrany loveckého psa.](b3/index.html)
 
 ## Ptačí chřipka
 
-1. Charakterizujte ptačí chřipku a popište příznaky onemocnění.
-2. Jaká pravidla platí v případě podezření na nákazu ptačí chřipkou?
+1. [Charakterizujte ptačí chřipku a popište příznaky onemocnění.](c1/index.html)
+2. [Jaká pravidla platí v případě podezření na nákazu ptačí chřipkou?](c2/index.html)

@@ -8,9 +8,9 @@
 
 ## Pasování na lovce zvěře
 
-1. Kdo a kdy může být pasován na lovce zvěře?
-2. Popište stručně průběh vlastního pasování na lovce.
-3. Čeho se musíme vyvarovat při pasování na lovce?
+1. [Kdo a kdy může být pasován na lovce zvěře?](b1/index.html)
+2. [Popište stručně průběh vlastního pasování na lovce.](b2/index.html)
+3. [Čeho se musíme vyvarovat při pasování na lovce?](b3/index.html)
 
 ## Myslivecké časopisy
 

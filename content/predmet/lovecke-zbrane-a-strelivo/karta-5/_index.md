@@ -8,11 +8,11 @@
 
 ## První pomoc při požití cizorodých látek a při poranění oka
 
-1. Jmenujte některé látky vyvolávající otravy.
-2. Jak ošetřujeme postiženého při požití cizorodých látek?
-3. Jak ošetřujeme poranění oka?
+1. [Jmenujte některé látky vyvolávající otravy.](b1/index.html)
+2. [Jak ošetřujeme postiženého při požití cizorodých látek?](b2/index.html)
+3. [Jak ošetřujeme poranění oka?](b3/index.html)
 
 ## Hlaveň kulovnice
 
-1. Které hlavní části má kulová hlaveň?
-2. Co jsou drážky a pole? K čemu slouží?
+1. [Které hlavní části má kulová hlaveň?](c1/index.html)
+2. [Co jsou drážky a pole? K čemu slouží?](c2/index.html)

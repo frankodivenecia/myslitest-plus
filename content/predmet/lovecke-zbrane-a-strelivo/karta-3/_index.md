@@ -8,11 +8,11 @@
 
 ## První pomoc při úrazech způsobených pádem
 
-1. Které typy poranění vznikají při pádech?
-2. Jak ošetřujeme otřesy mozku?
-3. Jak postupujeme při poranění páteře?
+1. [Které typy poranění vznikají při pádech?](b1/index.html)
+2. [Jak ošetřujeme otřesy mozku?](b2/index.html)
+3. [Jak postupujeme při poranění páteře?](b3/index.html)
 
 ## Přístroje pro noční vidění, elektronické a jiné pomůcky určené k lovu zvěře
 
-1. Popište princip fungování různých přístrojů pro noční lov zvěře.
-2. Jaké jsou etické aspekty použití uvedených přístrojů?
+1. [Popište princip fungování různých přístrojů pro noční lov zvěře.](c1/index.html)
+2. [Jaké jsou etické aspekty použití uvedených přístrojů?](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Lov a myslivost ve feudální době
 
-1. Charakterizujte stručně vývoj myslivosti v období feudalizmu.
-2. Čím období feudalizmu obohatilo naši myslivost?
-3. Co znamenají pojmy regál a dominikál?
+1. [Charakterizujte stručně vývoj myslivosti v období feudalizmu.](b1/index.html)
+2. [Čím období feudalizmu obohatilo naši myslivost?](b2/index.html)
+3. [Co znamenají pojmy regál a dominikál?](b3/index.html)
 
 ## Myslivecký řád
 
-1. Co je Myslivecký řád a pro koho je závazný?
-2. Dokážete vyjmenovat hlavní oblasti, které řeší Myslivecký řád?
+1. [Co je Myslivecký řád a pro koho je závazný?](c1/index.html)
+2. [Dokážete vyjmenovat hlavní oblasti, které řeší Myslivecký řád?](c2/index.html)

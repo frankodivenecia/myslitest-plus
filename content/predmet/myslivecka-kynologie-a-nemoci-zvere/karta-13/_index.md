@@ -8,11 +8,11 @@
 
 ## Základní principy chovu, druhy chovu loveckých psů
 
-1. Kdo stanovuje podmínky pro zařazení do chovu u jednotlivých plemen a jaké obecně jsou?
-2. Jak dlouho je fena březí a kdy nejdříve je možné od ní odebrat štěňata?
-3. Jaké jsou základní druhy chovu loveckých psů?
+1. [Kdo stanovuje podmínky pro zařazení do chovu u jednotlivých plemen a jaké obecně jsou?](b1/index.html)
+2. [Jak dlouho je fena březí a kdy nejdříve je možné od ní odebrat štěňata?](b2/index.html)
+3. [Jaké jsou základní druhy chovu loveckých psů?](b3/index.html)
 
 ## Snět slezinná
 
-1. Charakterizujte snět slezinnou a popište příznaky onemocnění.
-2. Jaká pravidla platí v případě podezření na onemocnění snětí slezinnou?
+1. [Charakterizujte snět slezinnou a popište příznaky onemocnění.](c1/index.html)
+2. [Jaká pravidla platí v případě podezření na onemocnění snětí slezinnou?](c2/index.html)

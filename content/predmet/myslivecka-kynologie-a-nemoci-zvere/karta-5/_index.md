@@ -8,11 +8,11 @@
 
 ## Infekční a neinfekční choroby psů
 
-1. Uveďte tři infekční nemoci psů a jejich původce.
-2. Uveďte dva příklady neinfekčního onemocnění psů.
-3. Uveďte, které infekční nemoci psů jsou přenosné na člověka.
+1. [Uveďte tři infekční nemoci psů a jejich původce.](b1/index.html)
+2. [Uveďte dva příklady neinfekčního onemocnění psů.](b2/index.html)
+3. [Uveďte, které infekční nemoci psů jsou přenosné na člověka.](b3/index.html)
 
 ## Klasický mor prasat
 
-1. Charakterizujte klasický mor prasat a popište příznaky onemocnění.
-2. Jaká pravidla platí v případě podezření na nákazu klasickým morem prasat?
+1. [Charakterizujte klasický mor prasat a popište příznaky onemocnění.](c1/index.html)
+2. [Jaká pravidla platí v případě podezření na nákazu klasickým morem prasat?](c2/index.html)

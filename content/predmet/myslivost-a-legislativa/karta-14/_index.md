@@ -8,11 +8,11 @@
 
 ## Jaké činnosti v lese zakazuje lesní zákon
 
-1. Které činnosti v lesích zakazuje lesní zákon?
-2. Které zákazy se nevztahují na výkon myslivosti?
-3. Kdo a kdy může vstupovat do lesa?
+1. [Které činnosti v lesích zakazuje lesní zákon?](b1/index.html)
+2. [Které zákazy se nevztahují na výkon myslivosti?](b2/index.html)
+3. [Kdo a kdy může vstupovat do lesa?](b3/index.html)
 
 ## Obecná a zvláštní ochrana živočichů
 
-1. Co rozumíte pod pojmem obecná a zvláštní ochrana živočichů?
-2. Do jakých skupin dělíme zvláště chráněné živočichy a co je základem jejich ochrany?
+1. [Co rozumíte pod pojmem obecná a zvláštní ochrana živočichů?](c1/index.html)
+2. [Do jakých skupin dělíme zvláště chráněné živočichy a co je základem jejich ochrany?](c2/index.html)

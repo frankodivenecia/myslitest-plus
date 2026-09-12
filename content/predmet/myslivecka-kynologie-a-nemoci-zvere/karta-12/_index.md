@@ -8,11 +8,11 @@
 
 ## Pojmy stavění, vystavování, slídění a přinášení
 
-1. Vysvětlete pojem stavění zvěře a slídění za zvěří.
-2. Vysvětlete pojem vystavování zvěře a popište, jak správně vypadá.
-3. Vysvětlete pojem hledání zvěře a přinášení zvěře.
+1. [Vysvětlete pojem stavění zvěře a slídění za zvěří.](b1/index.html)
+2. [Vysvětlete pojem vystavování zvěře a popište, jak správně vypadá.](b2/index.html)
+3. [Vysvětlete pojem hledání zvěře a přinášení zvěře.](b3/index.html)
 
 ## Poranění a úrazy zvěře
 
-1. Uveďte nejčastější typy poranění zvěře, a co je způsobuje.
-2. Jaká jsou možná opatření v předcházení poraněním zvěře?
+1. [Uveďte nejčastější typy poranění zvěře, a co je způsobuje.](c1/index.html)
+2. [Jaká jsou možná opatření v předcházení poraněním zvěře?](c2/index.html)

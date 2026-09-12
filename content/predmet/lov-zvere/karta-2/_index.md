@@ -13,11 +13,11 @@ elsewhere:
 
 ## Příprava a průběh společného lovu
 
-1. Jak probíhá příprava společného lovu?
-2. Jaké jsou hlavní části společného lovu?
-3. Jaké jsou povinnosti jednotlivých účastníků honu?
+1. [Jak probíhá příprava společného lovu?](b1/index.html)
+2. [Jaké jsou hlavní části společného lovu?](b2/index.html)
+3. [Jaké jsou povinnosti jednotlivých účastníků honu?](b3/index.html)
 
 ## Z historie lovu zvěře – fretkování
 
-1. Popište způsob lovu pomocí fretky.
-2. Zhodnoťte aktuálnost fretkování.
+1. [Popište způsob lovu pomocí fretky.](c1/index.html)
+2. [Zhodnoťte aktuálnost fretkování.](c2/index.html)

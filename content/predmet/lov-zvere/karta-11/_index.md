@@ -8,11 +8,11 @@
 
 ## Specifika lovu srnčí zvěře
 
-1. Jaké jsou základní způsoby lovu srnčí zvěře?
-2. Jaké jsou pobytové znaky srnčí zvěře?
-3. Jaká jsou specifika lovu srnců v říji?
+1. [Jaké jsou základní způsoby lovu srnčí zvěře?](b1/index.html)
+2. [Jaké jsou pobytové znaky srnčí zvěře?](b2/index.html)
+3. [Jaká jsou specifika lovu srnců v říji?](b3/index.html)
 
 ## Hodnocení zbraní černé zvěře
 
-1. Popište princip hodnocení zbraní černé zvěře.
-2. Za co lze u zbraní černé zvěře přidělit přirážkové a srážkové body?
+1. [Popište princip hodnocení zbraní černé zvěře.](c1/index.html)
+2. [Za co lze u zbraní černé zvěře přidělit přirážkové a srážkové body?](c2/index.html)

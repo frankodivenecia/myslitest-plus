@@ -8,11 +8,11 @@
 
 ## Technika lovecké střelby V praxi
 
-1. Popište způsob zamíření na statický cíl a techniku spouštění.
-2. Popište způsob zamíření na pohyblivý cíl a techniku spouštění.
-3. Jaké problémy a bezpečnostní rizika přináší střelba v nestandardních situacích (přes překážky, za snížené viditelnosti, k horizontu, v blízkosti sídel aj.).
+1. [Popište způsob zamíření na statický cíl a techniku spouštění.](b1/index.html)
+2. [Popište způsob zamíření na pohyblivý cíl a techniku spouštění.](b2/index.html)
+3. [Jaké problémy a bezpečnostní rizika přináší střelba v nestandardních situacích (přes překážky, za snížené viditelnosti, k horizontu, v blízkosti sídel aj.).](b3/index.html)
 
 ## Přebíjení střeliva
 
-1. Kdo a za jakých podmínek může přebíjet střelivo?
-2. Popište stručně přebíjení brokového a kulového střeliva.
+1. [Kdo a za jakých podmínek může přebíjet střelivo?](c1/index.html)
+2. [Popište stručně přebíjení brokového a kulového střeliva.](c2/index.html)

@@ -8,11 +8,11 @@
 
 ## Paroh
 
-1. Popište stavbu a vývoj parohu.
-2. Jaké funkce plní parohy?
+1. [Popište stavbu a vývoj parohu.](b1/index.html)
+2. [Jaké funkce plní parohy?](b2/index.html)
 
 ## Křepelka a špaček
 
-1. Co víte o křepelce polní?
-2. Co víte o špačkovi obecném?
-3. Zhodnoťte význam křepelky a špačka.
+1. [Co víte o křepelce polní?](c1/index.html)
+2. [Co víte o špačkovi obecném?](c2/index.html)
+3. [Zhodnoťte význam křepelky a špačka.](c3/index.html)

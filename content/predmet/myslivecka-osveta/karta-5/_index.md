@@ -8,11 +8,11 @@
 
 ## Zvyky při poslední leči
 
-1. Co je poslední leč a kdy se organizuje?
-2. Které tradice se na poslední leči dodržují?
-3. Popište myslivecký soud a pravidla pro jeho organizaci.
+1. [Co je poslední leč a kdy se organizuje?](b1/index.html)
+2. [Které tradice se na poslední leči dodržují?](b2/index.html)
+3. [Popište myslivecký soud a pravidla pro jeho organizaci.](b3/index.html)
 
 ## Myslivost v lidové tvorbě
 
-1. Jmenujte některé lidové výtvarné produkty s tematikou myslivosti.
-2. Jmenujte některé lidové hudební a slovesné produkty s tematikou myslivosti.
+1. [Jmenujte některé lidové výtvarné produkty s tematikou myslivosti.](c1/index.html)
+2. [Jmenujte některé lidové hudební a slovesné produkty s tematikou myslivosti.](c2/index.html)

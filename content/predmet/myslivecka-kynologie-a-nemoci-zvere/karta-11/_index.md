@@ -8,11 +8,11 @@
 
 ## Všestranné zkoušky
 
-1. Jaké typy loveckého výkonu se zkouší na Všestranných zkouškách a jakou loveckou upotřebitelnost na nich pes získává?
-2. Pro která plemena se Všestranné zkoušky pořádají a jak se označují úspěšní psi?
-3. Jaký je rozdíl Všestranných zkoušek pro ohaře a pro ostatní plemena?
+1. [Jaké typy loveckého výkonu se zkouší na Všestranných zkouškách a jakou loveckou upotřebitelnost na nich pes získává?](b1/index.html)
+2. [Pro která plemena se Všestranné zkoušky pořádají a jak se označují úspěšní psi?](b2/index.html)
+3. [Jaký je rozdíl Všestranných zkoušek pro ohaře a pro ostatní plemena?](b3/index.html)
 
 ## Toxoplazmóza
 
-1. Charakterizujte toxoplazmózu a popište příznaky onemocnění.
-2. Jaká pravidla platí v případě podezření na toxoplazmózou?
+1. [Charakterizujte toxoplazmózu a popište příznaky onemocnění.](c1/index.html)
+2. [Jaká pravidla platí v případě podezření na toxoplazmózou?](c2/index.html)

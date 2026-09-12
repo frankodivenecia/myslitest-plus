@@ -13,11 +13,11 @@ elsewhere:
 
 ## Příprava a průběh lovu s loveckým hostem
 
-1. Co by mělo předcházet příjezdu loveckého hosta?
-2. Jaká pravidla dodržuje lovecký host?
-3. Jaká pravidla dodržuje myslivecký hostitel?
+1. [Co by mělo předcházet příjezdu loveckého hosta?](b1/index.html)
+2. [Jaká pravidla dodržuje lovecký host?](b2/index.html)
+3. [Jaká pravidla dodržuje myslivecký hostitel?](b3/index.html)
 
 ## Sokolnictví
 
-1. Charakterizujte stručně sokolnictví.
-2. Co jsou to dravci vysokého a nízkého letu?
+1. [Charakterizujte stručně sokolnictví.](c1/index.html)
+2. [Co jsou to dravci vysokého a nízkého letu?](c2/index.html)

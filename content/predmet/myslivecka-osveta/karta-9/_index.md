@@ -8,11 +8,11 @@
 
 ## Lov v prehistorii a předfeudální době
 
-1. Charakterizujte stručně nejstarsí lidské dějiny s ohledem na používané lovecké nástroje a metody.
-2. Jakou roli plnil lov zvěře v období pravěku a starověku?
-3. Kdy a čím končí výsadní postavení lovu jako zdroje obživy člověka?
+1. [Charakterizujte stručně nejstarsí lidské dějiny s ohledem na používané lovecké nástroje a metody.](b1/index.html)
+2. [Jakou roli plnil lov zvěře v období pravěku a starověku?](b2/index.html)
+3. [Kdy a čím končí výsadní postavení lovu jako zdroje obživy člověka?](b3/index.html)
 
 ## Význam přehlídek a výstav trofejí pro propagaci myslivosti
 
-1. Jaký je význam přehlídek a výstav trofejí z hlediska propagace myslivosti?
-2. Které zásady musí být dodrženy při organizaci přehlídek a výstav trofejí z hlediska efektivní propagace?
+1. [Jaký je význam přehlídek a výstav trofejí z hlediska propagace myslivosti?](c1/index.html)
+2. [Které zásady musí být dodrženy při organizaci přehlídek a výstav trofejí z hlediska efektivní propagace?](c2/index.html)

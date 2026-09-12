@@ -8,11 +8,11 @@
 
 ## Povinnosti uživatelů honiteb hradit škody působené zvěří
 
-1. Které škody je povinen hradit uživatel honitby?
-2. Jaký je postup při uplatňování nároku na náhradu škod?
-3. Kdo u spolku zodpovídá za škody způsobené zvěří?
+1. [Které škody je povinen hradit uživatel honitby?](b1/index.html)
+2. [Jaký je postup při uplatňování nároku na náhradu škod?](b2/index.html)
+3. [Kdo u spolku zodpovídá za škody způsobené zvěří?](b3/index.html)
 
 ## Podmínky chovu a používání loveckých dravců
 
-1. Co rozumíte pod pojmem „lovecký dravec"?
-2. Jaké jsou základní podmínky chovu a používání loveckých dravců?
+1. [Co rozumíte pod pojmem „lovecký dravec“?](c1/index.html)
+2. [Jaké jsou základní podmínky chovu a používání loveckých dravců?](c2/index.html)

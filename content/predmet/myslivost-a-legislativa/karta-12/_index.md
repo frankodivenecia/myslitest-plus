@@ -8,11 +8,11 @@
 
 ## Honební společenstvo, jeho založení, orgány a činnost
 
-1. Co je to honební společenstvo a jak se zakládá?
-2. Jaké jsou orgány honebního společenstva?
-3. Co je předmětem činnosti honebních společenstev?
+1. [Co je to honební společenstvo a jak se zakládá?](b1/index.html)
+2. [Jaké jsou orgány honebního společenstva?](b2/index.html)
+3. [Co je předmětem činnosti honebních společenstev?](b3/index.html)
 
 ## Rozdíl mezi držitelem a uživatelem honitby
 
-1. Kdo je držitel honitby?
-2. Kdo je uživatel honitby?
+1. [Kdo je držitel honitby?](c1/index.html)
+2. [Kdo je uživatel honitby?](c2/index.html)

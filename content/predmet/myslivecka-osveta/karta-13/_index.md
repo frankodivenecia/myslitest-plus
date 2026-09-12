@@ -8,11 +8,11 @@
 
 ## Myslivost po roce 2000
 
-1. Které jsou hlavní rysy myslivecké legislativy po roce 2000?
-2. Které jsou hlavní společenské aspekty myslivosti po roce 2000?
-3. Které jsou hlavní úkoly myslivosti do budoucna?
+1. [Které jsou hlavní rysy myslivecké legislativy po roce 2000?](b1/index.html)
+2. [Které jsou hlavní společenské aspekty myslivosti po roce 2000?](b2/index.html)
+3. [Které jsou hlavní úkoly myslivosti do budoucna?](b3/index.html)
 
 ## Myslivecké vzdělávání a výzkum
 
-1. Jak je u nás organizováno myslivecké vzdělávání?
-2. Co víte o mysliveckém výzkumu?
+1. [Jak je u nás organizováno myslivecké vzdělávání?](c1/index.html)
+2. [Co víte o mysliveckém výzkumu?](c2/index.html)

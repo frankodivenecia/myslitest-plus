@@ -8,11 +8,11 @@
 
 ## Pomůcky pro výcvik loveckých psů
 
-1. Vyjmenujte základní pomůcky používané při výcviku psa a k čemu se používají?
-2. Jaké jsou typy vodítek a řemenů, jaký je jejich význam a rozdíl použití?
-3. Jaký je rozdíl a význam píšťalky nebo povelky pro ovládání psa?
+1. [Vyjmenujte základní pomůcky používané při výcviku psa a k čemu se používají?](b1/index.html)
+2. [Jaké jsou typy vodítek a řemenů, jaký je jejich význam a rozdíl použití?](b2/index.html)
+3. [Jaký je rozdíl a význam píšťalky nebo povelky pro ovládání psa?](b3/index.html)
 
 ## aktualizuje si sám lektor, zkušební komisař pro příslušné časové období kurzu, přednášek a zkoušek Například:
 
-1. Jaká je aktuální situace výskytu afrického moru prasat ve střední a severovýchodní Evropě?
-2. Mohou se národně uznaná lovecká plemena psů, která zatím nejsou uznána FCI, zúčastnit v ČR zkoušek lovecké upotřebitelnosti?
+1. [Jaká je aktuální situace výskytu afrického moru prasat ve střední a severovýchodní Evropě?](c1/index.html)
+2. [Mohou se národně uznaná lovecká plemena psů, která zatím nejsou uznána FCI, zúčastnit v ČR zkoušek lovecké upotřebitelnosti?](c2/index.html)

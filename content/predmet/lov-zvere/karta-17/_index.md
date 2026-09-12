@@ -8,11 +8,11 @@
 
 ## Lapání predátorů a zvířat škodících v myslivosti
 
-1. Popište základní provedení a funkci sklopce.
-2. Kterou zvěř Ize pomocí sklopce lovit?
-3. Jaké humánní zásady platí při odchytu zvěře?
+1. [Popište základní provedení a funkci sklopce.](b1/index.html)
+2. [Kterou zvěř Ize pomocí sklopce lovit?](b2/index.html)
+3. [Jaké humánní zásady platí při odchytu zvěře?](b3/index.html)
 
 ## Z historie lovu zvěře – vrše a šlehačky
 
-1. Vysvětlete princip lovu do vrše.
-2. Vysvětlete princip lovu pomocí šlehačky.
+1. [Vysvětlete princip lovu do vrše.](c1/index.html)
+2. [Vysvětlete princip lovu pomocí šlehačky.](c2/index.html)

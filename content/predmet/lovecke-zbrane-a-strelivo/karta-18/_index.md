@@ -8,11 +8,11 @@
 
 ## Dostřel loveckých zbraní z hlediska bezpečnosti, účinku a myslivecké vzdálenosti
 
-1. Které faktory ovlivňují maximální dostřel kulovnice?
-2. Na čem závisí maximální dostřel brokovnice?
-3. Uveďte příklady přibližných hodnot dostřelu loveckých zbraní z hlediska bezpečnosti, reálného použití v praxi a myslivecké etiky.
+1. [Které faktory ovlivňují maximální dostřel kulovnice?](b1/index.html)
+2. [Na čem závisí maximální dostřel brokovnice?](b2/index.html)
+3. [Uveďte příklady přibližných hodnot dostřelu loveckých zbraní z hlediska bezpečnosti, reálného použití v praxi a myslivecké etiky.](b3/index.html)
 
 ## Zkoušení zbraní a zkušební značky
 
-1. Kdy a jak se zkouší lovecké zbraně?
-2. Jak se označuje lovecká zbraň při přezkoušení?
+1. [Kdy a jak se zkouší lovecké zbraně?](c1/index.html)
+2. [Jak se označuje lovecká zbraň při přezkoušení?](c2/index.html)

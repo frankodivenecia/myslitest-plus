@@ -8,11 +8,11 @@
 
 ## Odchyt spárkaté zvěře
 
-1. Jaké jsou dva nejběžnější způsoby odchytu spárkaté zvěře?
-2. Popište chytací ohradu a pravidla pro její budování.
-3. Popište způsob manipulace a transport odchycené spárkaté zvěře.
+1. [Jaké jsou dva nejběžnější způsoby odchytu spárkaté zvěře?](b1/index.html)
+2. [Popište chytací ohradu a pravidla pro její budování.](b2/index.html)
+3. [Popište způsob manipulace a transport odchycené spárkaté zvěře.](b3/index.html)
 
 ## Z historie lovu zvěře – lovecká štvanice, parfosní hon
 
-1. Jak probíhala lovecká štvanice?
-2. Popište průběh a hlavní myšlenku parforsního honu.
+1. [Jak probíhala lovecká štvanice?](c1/index.html)
+2. [Popište průběh a hlavní myšlenku parforsního honu.](c2/index.html)

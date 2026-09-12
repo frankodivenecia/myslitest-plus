@@ -10,11 +10,11 @@
 
 ## Vybrané pojmy ze zoologie
 
-1. Vysvětlete pojmy kryptické zbarvení a pohlavní dimorfizmus.
-2. Vysvětlete pojmy superfoetace, latentní březivost, monogamie a polygamie.
+1. [Vysvětlete pojmy kryptické zbarvení a pohlavní dimorfizmus.](b1/index.html)
+2. [Vysvětlete pojmy superfoetace, latentní březivost, monogamie a polygamie.](b2/index.html)
 
 ## Krocan divoký
 
-1. Popište krocana, jeho životní potřeby a projevy.
-2. Ve kterých lokalitách se u nás krocanům daří?
-3. Zhodnoťte myslivecký význam krocana.
+1. [Popište krocana, jeho životní potřeby a projevy.](c1/index.html)
+2. [Ve kterých lokalitách se u nás krocanům daří?](c2/index.html)
+3. [Zhodnoťte myslivecký význam krocana.](c3/index.html)

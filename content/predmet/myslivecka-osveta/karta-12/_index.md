@@ -8,11 +8,11 @@
 
 ## Myslivost ve 20. století
 
-1. Vyjmenujte hlavní události v dějinách myslivosti ve 20. století.
-2. Jak se vyvíjelo myslivecké zákonodárství v průběhu 20. století?
-3. Jak se vyvíjel vztah myslivosti k vlastnictví půdy ve 20. století?
+1. [Vyjmenujte hlavní události v dějinách myslivosti ve 20. století.](b1/index.html)
+2. [Jak se vyvíjelo myslivecké zákonodárství v průběhu 20. století?](b2/index.html)
+3. [Jak se vyvíjel vztah myslivosti k vlastnictví půdy ve 20. století?](b3/index.html)
 
 ## Nejdůležitější myslivecké výstavy, propagační a společenské akce
 
-1. Jaký je význam mysliveckých výstav a akcí pro veřejnost z hlediska propagace myslivosti?
-2. Jmenujte nejdůležitější výstavy a společenské akce s mysliveckou účastí.
+1. [Jaký je význam mysliveckých výstav a akcí pro veřejnost z hlediska propagace myslivosti?](c1/index.html)
+2. [Jmenujte nejdůležitější výstavy a společenské akce s mysliveckou účastí.](c2/index.html)

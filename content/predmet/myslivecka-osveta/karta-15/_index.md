@@ -8,11 +8,11 @@
 
 ## Významné postavy v historii a současnosti naší myslivosti
 
-1. Jmenujte významné postavy v nejstarších dějinách naší myslivosti.
-2. Jmenujte některé významné české puškaře a literáty 19. století.
-3. Jmenujte některé významné postavy naší myslivosti 20. a 21. století.
+1. [Jmenujte významné postavy v nejstarších dějinách naší myslivosti.](b1/index.html)
+2. [Jmenujte některé významné české puškaře a literáty 19. století.](b2/index.html)
+3. [Jmenujte některé významné postavy naší myslivosti 20. a 21. století.](b3/index.html)
 
 ## Historie našeho bažantnictví, obornictví a introdukcí zvěře
 
-1. Jaká je historie zakládání obor a bažantnic?
-2. Vyjmenujte introdukované původně oborní druhy naší zvěře.
+1. [Jaká je historie zakládání obor a bažantnic?](c1/index.html)
+2. [Vyjmenujte introdukované původně oborní druhy naší zvěře.](c2/index.html)

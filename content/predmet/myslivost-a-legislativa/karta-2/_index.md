@@ -8,11 +8,11 @@
 
 ## Výjimky z doby lovu
 
-1. Kdo povoluje lov zvěře mimo dobu lovu?
-2. Z jakých důvodů je možno povolit výjimky z doby lovu?
-3. Jak se postupuje při lovu zvěře pro výcvik a zkoušky loveckých psů?
+1. [Kdo povoluje lov zvěře mimo dobu lovu?](b1/index.html)
+2. [Z jakých důvodů je možno povolit výjimky z doby lovu?](b2/index.html)
+3. [Jak se postupuje při lovu zvěře pro výcvik a zkoušky loveckých psů?](b3/index.html)
 
 ## Plánování chovu a lovu zvěře
 
-1. Kdo je povinen vypracovat plán mysliveckého hospodaření v honitbě, kdo vypracovaný plán schvaluje a kdo má právo kontrolovat jeho plnění?
-2. Uveďte základní principy plánování lovu zvěře v honitbě.
+1. [Kdo je povinen vypracovat plán mysliveckého hospodaření v honitbě, kdo vypracovaný plán schvaluje a kdo má právo kontrolovat jeho plnění?](c1/index.html)
+2. [Uveďte základní principy plánování lovu zvěře v honitbě.](c2/index.html)

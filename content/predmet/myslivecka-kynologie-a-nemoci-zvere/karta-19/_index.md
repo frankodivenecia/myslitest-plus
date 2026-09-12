@@ -8,11 +8,11 @@
 
 ## Dosled spárkaté zvěře
 
-1. Jaké je žádoucí chování psa při úspěšném dokončení dosledu spárkaté zvěře?
-2. Jaké je nežádoucí chování psa při úspěšném dokončení dosledu spárkaté zvěře?
-3. Uveďte alespoň tři druhy zkoušek, které kvalifikují psa k dosledu spárkaté zvěře.
+1. [Jaké je žádoucí chování psa při úspěšném dokončení dosledu spárkaté zvěře?](b1/index.html)
+2. [Jaké je nežádoucí chování psa při úspěšném dokončení dosledu spárkaté zvěře?](b2/index.html)
+3. [Uveďte alespoň tři druhy zkoušek, které kvalifikují psa k dosledu spárkaté zvěře.](b3/index.html)
 
 ## Svrab (prašivina), střevní červivost
 
-1. Charakterizujte prašivinu, popište příznaky onemocnění a opatření v případě podezření na prašivinu.
-2. Charakterizujte stručně střevní červivost a opatření v případě výskytu střevní červivosti.
+1. [Charakterizujte prašivinu, popište příznaky onemocnění a opatření v případě podezření na prašivinu.](c1/index.html)
+2. [Charakterizujte stručně střevní červivost a opatření v případě výskytu střevní červivosti.](c2/index.html)

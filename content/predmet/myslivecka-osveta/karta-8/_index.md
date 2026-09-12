@@ -8,11 +8,11 @@
 
 ## Patroni myslivosti
 
-1. Které znáte patrony myslivců a lovců?
-2. Co víte o sv. Hubertovi?
-3. Jak se projevuje kult patronů myslivosti v současné době?
+1. [Které znáte patrony myslivců a lovců?](b1/index.html)
+2. [Co víte o sv. Hubertovi?](b2/index.html)
+3. [Jak se projevuje kult patronů myslivosti v současné době?](b3/index.html)
 
 ## Červen – měsíc myslivosti a ochrany přírody
 
-1. Jaká je historie a význam tradice „Červen – měsíc myslivosti a ochrany přírody"?
-2. Jaká je náplň tradice „Červen – měsíc myslivosti a ochrany přírody"?
+1. [Jaká je historie a význam tradice „Červen – měsíc myslivosti a ochrany přírody“?](c1/index.html)
+2. [Jaká je náplň tradice „Červen – měsíc myslivosti a ochrany přírody“?](c2/index.html)

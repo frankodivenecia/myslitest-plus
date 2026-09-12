@@ -8,11 +8,11 @@
 
 ## Zobák, drápy, spárky, paspárky
 
-1. K jakým funkcím je využíván zobák?
-2. K čemu slouží drápy, spárky a paspárky?
+1. [K jakým funkcím je využíván zobák?](b1/index.html)
+2. [K čemu slouží drápy, spárky a paspárky?](b2/index.html)
 
 ## Medvěd hnědý
 
-1. Popište medvěda.
-2. Jaký je areál výskytu medvědů v Evropě a u nás?
-3. Jaké jsou životní potřeby medvědů?
+1. [Popište medvěda.](c1/index.html)
+2. [Jaký je areál výskytu medvědů v Evropě a u nás?](c2/index.html)
+3. [Jaké jsou životní potřeby medvědů?](c3/index.html)

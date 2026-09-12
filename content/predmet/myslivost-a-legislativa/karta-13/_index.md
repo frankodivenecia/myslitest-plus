@@ -8,12 +8,12 @@
 
 ## Co rozumíme pod pojmem myslivost
 
-1. Co rozumíte pod pojmem myslivost?
-2. Co je obsahem výkonu myslivosti?
-3. Jaké jsou hlavní cíle myslivecké činnosti?
-4. Uveďte příklady praktických mysliveckých činností.
+1. [Co rozumíte pod pojmem myslivost?](b1/index.html)
+2. [Co je obsahem výkonu myslivosti?](b2/index.html)
+3. [Jaké jsou hlavní cíle myslivecké činnosti?](b3/index.html)
+4. [Uveďte příklady praktických mysliveckých činností.](b4/index.html)
 
 ## Kdo a za jakých podmínek povoluje nebo nařizuje snížení stavů zvěře
 
-1. Kdo povoluje nebo nařizuje snížení stavů zvěře?
-2. Kdo může požádat o snížení stavů zvěře?
+1. [Kdo povoluje nebo nařizuje snížení stavů zvěře?](c1/index.html)
+2. [Kdo může požádat o snížení stavů zvěře?](c2/index.html)

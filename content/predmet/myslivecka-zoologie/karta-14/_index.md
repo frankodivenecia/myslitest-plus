@@ -8,11 +8,11 @@
 
 ## Pohybová soustava
 
-1. Co je kosterní soustava, z čeho se skládá a jakou plní funkci?
-2. Co je svalová soustava, z čeho se skládá a jakou plní funkci?
+1. [Co je kosterní soustava, z čeho se skládá a jakou plní funkci?](b1/index.html)
+2. [Co je svalová soustava, z čeho se skládá a jakou plní funkci?](b2/index.html)
 
 ## Kamzík horský
 
-1. Popište kamzíka a jeho životní potřeby a projevy.
-2. V kterých oblastech se kamzík vyskytuje?
-3. Zhodnoťte myslivecký význam kamzíka
+1. [Popište kamzíka a jeho životní potřeby a projevy.](c1/index.html)
+2. [V kterých oblastech se kamzík vyskytuje?](c2/index.html)
+3. [Zhodnoťte myslivecký význam kamzíka](c3/index.html)

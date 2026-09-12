@@ -8,11 +8,11 @@
 
 ## Popis stopy jelena, porovnání se stopou daňka
 
-1. Popište stopu jelena a stopu laně.
-2. Uveďte příklady stopních variant zanechávaných různými jeleny.
-3. Jaký je hlavní rozdíl mezi stopou jelena a daňka?
+1. [Popište stopu jelena a stopu laně.](b1/index.html)
+2. [Uveďte příklady stopních variant zanechávaných různými jeleny.](b2/index.html)
+3. [Jaký je hlavní rozdíl mezi stopou jelena a daňka?](b3/index.html)
 
 ## Hodnocení jeleních trofejí
 
-1. Popište princip hodnocení jeleního paroží.
-2. Za co lze u jeleního paroží přidělit přirážkové a srážkové body?
+1. [Popište princip hodnocení jeleního paroží.](c1/index.html)
+2. [Za co lze u jeleního paroží přidělit přirážkové a srážkové body?](c2/index.html)

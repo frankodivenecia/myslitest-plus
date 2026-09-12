@@ -8,11 +8,11 @@
 
 ## Odchyt drobné zvěře
 
-1. Popište zaječí tenata a způsob lovu s nimi.
-2. Popište náhonec a vlček. K čemu slouží?
-3. Jak se používá podražec?
+1. [Popište zaječí tenata a způsob lovu s nimi.](b1/index.html)
+2. [Popište náhonec a vlček. K čemu slouží?](b2/index.html)
+3. [Jak se používá podražec?](b3/index.html)
 
 ## Z historie lovu zvěře – čižba
 
-1. Vysvětlete pojem čižba.
-2. Jmenujte některé historické metody odchytu drobného ptactva.
+1. [Vysvětlete pojem čižba.](c1/index.html)
+2. [Jmenujte některé historické metody odchytu drobného ptactva.](c2/index.html)

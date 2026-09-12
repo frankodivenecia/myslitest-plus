@@ -8,11 +8,11 @@
 
 ## Chrup
 
-1. Popište chrup zvěře a uveďte hlavní rozdíly mezi jednotlivými skupinami zvěře (přežvýkavci, černá, zajíci, šelmy).
-2. Co to je zubní vzorec? Uveďte příklady.
+1. [Popište chrup zvěře a uveďte hlavní rozdíly mezi jednotlivými skupinami zvěře (přežvýkavci, černá, zajíci, šelmy).](b1/index.html)
+2. [Co to je zubní vzorec? Uveďte příklady.](b2/index.html)
 
 ## Los evropský
 
-1. Popište oblasti výskytu losa.
-2. Popište losa a jeho životní potřeby.
-3. Jaký je význam losů v naší krajině?
+1. [Popište oblasti výskytu losa.](c1/index.html)
+2. [Popište losa a jeho životní potřeby.](c2/index.html)
+3. [Jaký je význam losů v naší krajině?](c3/index.html)

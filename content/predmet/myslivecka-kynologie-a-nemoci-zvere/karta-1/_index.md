@@ -8,11 +8,11 @@
 
 ## Geneticky (dědičně) podmíněné choroby v chovu psů
 
-1. Vysvětlete pojem dědičně podmíněné onemocnění a co je to pes – přenašeč.
-2. Vyjmenujte některá dědičně podmíněná onemocnění psů.
-3. Jakými způsoby se zjišťuje dědičně podmíněné onemocnění, jakou roli mohou v případě hrát chovatelské kluby a jakou FCI?
+1. [Vysvětlete pojem dědičně podmíněné onemocnění a co je to pes – přenašeč.](b1/index.html)
+2. [Vyjmenujte některá dědičně podmíněná onemocnění psů.](b2/index.html)
+3. [Jakými způsoby se zjišťuje dědičně podmíněné onemocnění, jakou roli mohou v případě hrát chovatelské kluby a jakou FCI?](b3/index.html)
 
 ## Opatření při zjištění nákazy zvěře
 
-1. Jaká je povinnost uživatele honitby při zjištění nákazy?
-2. Jaká opatření mohou být přijata při likvidaci nákazy?
+1. [Jaká je povinnost uživatele honitby při zjištění nákazy?](c1/index.html)
+2. [Jaká opatření mohou být přijata při likvidaci nákazy?](c2/index.html)

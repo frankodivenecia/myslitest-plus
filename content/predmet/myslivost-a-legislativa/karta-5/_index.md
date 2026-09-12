@@ -8,12 +8,12 @@
 
 ## Používání loveckých psů, jejich kvalifikace a stanovené počty
 
-1. Kdo a v jakých počtech je povinen držet lovecké psy v honitbě?
-2. Jaké druhy kvalifikací loveckých psů znáte?
-3. Jaký je potřebný počet loveckých psů na společných lovech?
-4. Kde získává lovecký pes potřebnou kvalifikaci?
+1. [Kdo a v jakých počtech je povinen držet lovecké psy v honitbě?](b1/index.html)
+2. [Jaké druhy kvalifikací loveckých psů znáte?](b2/index.html)
+3. [Jaký je potřebný počet loveckých psů na společných lovech?](b3/index.html)
+4. [Kde získává lovecký pes potřebnou kvalifikaci?](b4/index.html)
 
 ## Chovatelské přehlídky trofejí
 
-1. Kdo rozhoduje o konání chovatelských přehlídek trofejí?
-2. K čemu slouží chovatelské přehlídky trofejí?
+1. [Kdo rozhoduje o konání chovatelských přehlídek trofejí?](c1/index.html)
+2. [K čemu slouží chovatelské přehlídky trofejí?](c2/index.html)

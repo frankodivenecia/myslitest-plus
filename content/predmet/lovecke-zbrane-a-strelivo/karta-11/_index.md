@@ -8,11 +8,11 @@
 
 ## Montáže zaměřovacích dalekohledů
 
-1. Které jsou základní požadavky kladené na montáž zaměřovacího dalekohledu?
-2. Uveďte základní typy montáží a jejich výhody.
-3. Jaké problémy může přivodit špatně zvolená, nekvalitní nebo nevhodně instalovaná montáž?
+1. [Které jsou základní požadavky kladené na montáž zaměřovacího dalekohledu?](b1/index.html)
+2. [Uveďte základní typy montáží a jejich výhody.](b2/index.html)
+3. [Jaké problémy může přivodit špatně zvolená, nekvalitní nebo nevhodně instalovaná montáž?](b3/index.html)
 
 ## Střelné prachy
 
-1. Jaké druhy střelných prachů se dnes používají?
-2. Co se stane při záměně různých druhů střelného prachu?
+1. [Jaké druhy střelných prachů se dnes používají?](c1/index.html)
+2. [Co se stane při záměně různých druhů střelného prachu?](c2/index.html)

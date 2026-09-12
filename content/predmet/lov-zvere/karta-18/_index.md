@@ -8,11 +8,11 @@
 
 ## Norování
 
-1. Popište stručně průběh norování.
-2. Která zvěř se nejčastěji loví norováním?
-3. Popište umělou noru a její umístění.
+1. [Popište stručně průběh norování.](b1/index.html)
+2. [Která zvěř se nejčastěji loví norováním?](b2/index.html)
+3. [Popište umělou noru a její umístění.](b3/index.html)
 
 ## Z historie lovu zvěře – způsoby lovu tetřeva a tetřívka
 
-1. Popište způsob lovu tetřeva.
-2. Popište způsob lovu tetřívka.
+1. [Popište způsob lovu tetřeva.](c1/index.html)
+2. [Popište způsob lovu tetřívka.](c2/index.html)

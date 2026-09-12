@@ -8,11 +8,11 @@
 
 ## Právní problematika společných lovů
 
-1. Co rozumíte pod pojmem společný lov a hon?
-2. Které druhy zvěře a jakým způsobem je možno na společných lovech lovit?
-3. Jaké zákonné podmínky musí být splněny při společném lovu.
+1. [Co rozumíte pod pojmem společný lov a hon?](b1/index.html)
+2. [Které druhy zvěře a jakým způsobem je možno na společných lovech lovit?](b2/index.html)
+3. [Jaké zákonné podmínky musí být splněny při společném lovu.](b3/index.html)
 
 ## Povinnosti vlastníků domácích a hospodářských zvířat a vlastníků pozemků ve vztahu k uživateli honitby
 
-1. Jaké znáte povinnosti vlastníků (chovatelů) domácích zvířat v souvislosti s ochranou myslivosti?
-2. Jaké povinnosti mají vlastníci (nájemci) při obhospodařování jejich pozemků?
+1. [Jaké znáte povinnosti vlastníků (chovatelů) domácích zvířat v souvislosti s ochranou myslivosti?](c1/index.html)
+2. [Jaké povinnosti mají vlastníci (nájemci) při obhospodařování jejich pozemků?](c2/index.html)

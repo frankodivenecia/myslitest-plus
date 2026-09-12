@@ -8,11 +8,11 @@
 
 ## Českomoravská myslivecká jednota
 
-1. Kdy a proč vzniká Českomoravská myslivecká jednota?
-2. Co je posláním Českomoravské myslivecké jednoty a proč má členství v této organizaci význam?
-3. Jaká je organizační struktura Českomoravské myslivecké jednoty?
+1. [Kdy a proč vzniká Českomoravská myslivecká jednota?](b1/index.html)
+2. [Co je posláním Českomoravské myslivecké jednoty a proč má členství v této organizaci význam?](b2/index.html)
+3. [Jaká je organizační struktura Českomoravské myslivecké jednoty?](b3/index.html)
 
 ## Významné myslivecké osobnosti našich regionů
 
-1. Jmenujte některé významné osobnosti vašeho regionu.
-2. Charakterizujte blíže vybranou osobnost vašeho regionu.
+1. [Jmenujte některé významné osobnosti vašeho regionu.](c1/index.html)
+2. [Charakterizujte blíže vybranou osobnost vašeho regionu.](c2/index.html)

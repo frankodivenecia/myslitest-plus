@@ -8,11 +8,11 @@
 
 ## První pomoc při popáleninách a omrzlinách
 
-1. Které stupně popálenin a omrzlin známe?
-2. Jak ošetřujeme popáleniny?
-3. Jak ošetřujeme omrzliny?
+1. [Které stupně popálenin a omrzlin známe?](b1/index.html)
+2. [Jak ošetřujeme popáleniny?](b2/index.html)
+3. [Jak ošetřujeme omrzliny?](b3/index.html)
 
 ## Hlaveň brokovnice
 
-1. Které hlavní části má broková hlaveň?
-2. Jak se liší vývrt brokové hlavně od hlavně kulové?
+1. [Které hlavní části má broková hlaveň?](c1/index.html)
+2. [Jak se liší vývrt brokové hlavně od hlavně kulové?](c2/index.html)

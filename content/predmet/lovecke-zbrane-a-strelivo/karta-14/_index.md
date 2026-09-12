@@ -8,11 +8,11 @@
 
 ## Nastřelování zbraní
 
-1. Popište, jak se zjišťuje střední zásah brokovnice a kulovnice.
-2. Popište stručně postup při nastřelování zbraně s mechanickými mířidly.
-3. Popište stručně postup při nastřelování zbraně s optickým zaměřovačem.
+1. [Popište, jak se zjišťuje střední zásah brokovnice a kulovnice.](b1/index.html)
+2. [Popište stručně postup při nastřelování zbraně s mechanickými mířidly.](b2/index.html)
+3. [Popište stručně postup při nastřelování zbraně s optickým zaměřovačem.](b3/index.html)
 
 ## Bezolovnaté a nestandardní střely
 
-1. Jaké jsou alternativní materiály používané pro výrobu střel a jaké jsou důvody jejich zavádění?
-2. Jaké jsou výhody a nevýhody střel z nestandardních materiálů?
+1. [Jaké jsou alternativní materiály používané pro výrobu střel a jaké jsou důvody jejich zavádění?](c1/index.html)
+2. [Jaké jsou výhody a nevýhody střel z nestandardních materiálů?](c2/index.html)

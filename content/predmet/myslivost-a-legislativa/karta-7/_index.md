@@ -8,11 +8,11 @@
 
 ## Právní problematika související s výstavbou mysliveckých zařízení
 
-1. Co rozumíte pod pojmem myslivecká zařízení?
-2. Kdo povoluje budování a umístění mysliveckých zařízení v honitbě?
-3. Ke stavbě jakých mysliveckých zařízení je třeba stavební povolení nebo ohlášení stavebnímu úřadu?
+1. [Co rozumíte pod pojmem myslivecká zařízení?](b1/index.html)
+2. [Kdo povoluje budování a umístění mysliveckých zařízení v honitbě?](b2/index.html)
+3. [Ke stavbě jakých mysliveckých zařízení je třeba stavební povolení nebo ohlášení stavebnímu úřadu?](b3/index.html)
 
 ## Rozdíl mezi oborou a honitbou
 
-1. Co je to obora a jak se zřizuje?
-2. Jaké jsou zvláštnosti lovu zvěře v oboře?
+1. [Co je to obora a jak se zřizuje?](c1/index.html)
+2. [Jaké jsou zvláštnosti lovu zvěře v oboře?](c2/index.html)

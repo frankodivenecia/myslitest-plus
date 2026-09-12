@@ -8,11 +8,11 @@
 
 ## První pomoc při bezvědomí
 
-1. Co je bezvědomí a v čem spočívá jeho nebezpečnost?
-2. Jaké mohou být příčiny bezvědomí?
-3. Jak ošetřujeme postiženého v bezvědomí?
+1. [Co je bezvědomí a v čem spočívá jeho nebezpečnost?](b1/index.html)
+2. [Jaké mohou být příčiny bezvědomí?](b2/index.html)
+3. [Jak ošetřujeme postiženého v bezvědomí?](b3/index.html)
 
 ## Historický vývoj zbraní
 
-1. Popište princip fungování předovek a jejich zámkové mechanismy.
-2. Jmenujte některé vynálezy v oblasti zbraní a střeliva druhé poloviny 19. století.
+1. [Popište princip fungování předovek a jejich zámkové mechanismy.](c1/index.html)
+2. [Jmenujte některé vynálezy v oblasti zbraní a střeliva druhé poloviny 19. století.](c2/index.html)
