@@ -12,7 +12,7 @@
   {% for s in subjects %}
   <li>
     <a href="/print/subject/{{ s.slug }}" target="_blank"><span class="roman">{{ s.roman }}</span> {{ s.title }}</a>
-    <span class="muted">celý předmět</span>
+    <span class="muted">celý předmět · <a href="/print/cards/{{ s.slug }}" target="_blank">karty 4/str.</a></span>
   </li>
   {% endfor %}
 </ul>

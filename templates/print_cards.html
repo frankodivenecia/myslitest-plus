@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ doc_title }} — {{ APP_NAME }}</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <style>@page { size: A4 landscape; margin: 8mm; }</style>
+</head>
+<body class="printbody">
+  <div class="noprint printbar">
+    <button onclick="window.print()">Vytisknout / uložit PDF</button>
+    <a href="javascript:history.back()">Zpět</a>
+    <span class="muted">A4 na šířku, 4 karty na stránku</span>
+  </div>
+
+  {% for page in pages %}
+  <div class="gridpage">
+    {% for box in page %}
+    <section class="gcard">
+      <h3>{{ box.heading }}</h3>
+      {% if box.rows %}
+        {% for it in box.rows %}
+        <p class="gq">{{ it.qid }}. {{ it.text }}</p>
+        <div class="ga">{{ it.answer_html|safe }}</div>
+        {% endfor %}
+      {% else %}
+        <p class="muted">— zatím bez odpovědí —</p>
+      {% endif %}
+    </section>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</body>
+</html>

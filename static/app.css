@@ -220,3 +220,21 @@ textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); 
 /* --- kredit na loginu --- */
 .credit { margin-top: 1.3rem; padding-top: .9rem; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); text-align: center; }
 .credit a { color: var(--accent); }
+
+/* --- tisk karet 4 na stránku (A4 landscape) --- */
+.gridpage { display: flex; gap: 4mm; align-items: stretch; padding: 6mm; }
+.gcard {
+  flex: 1 1 0; width: 25%; min-width: 0;
+  border: 1px solid #bbb; border-radius: 4px; padding: 3.5mm;
+  font-size: 8.5pt; line-height: 1.3; overflow: hidden;
+}
+.gcard h3 { font-size: 9pt; margin: 0 0 2mm; padding-bottom: 1mm; border-bottom: 1px solid #ddd; }
+.gcard .gq { font-weight: 700; margin: 2mm 0 .5mm; }
+.gcard .ga { margin: 0 0 1mm; }
+.gcard .ga :first-child { margin-top: 0; }
+.gcard .ga :last-child { margin-bottom: 0; }
+@media print {
+  .gridpage { break-after: page; page-break-after: always; padding: 0; min-height: 185mm; }
+  .gridpage:last-child { break-after: auto; page-break-after: auto; }
+  .gcard { break-inside: avoid; }
+}

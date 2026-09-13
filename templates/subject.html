@@ -3,7 +3,8 @@
 {% block content %}
 <p class="crumbs"><a href="/questions">Otázky</a> › <span class="roman">{{ subject.roman }}</span> {{ subject.title }}</p>
 <h1>{{ subject.title }}
-  <a class="btn-ghost print-btn" href="/print/subject/{{ subject.slug }}" target="_blank">Tisk (PDF)</a></h1>
+  <a class="btn-ghost print-btn" href="/print/subject/{{ subject.slug }}" target="_blank">Tisk (PDF)</a>
+  <a class="btn-ghost print-btn" href="/print/cards/{{ subject.slug }}" target="_blank">Karty 4/str.</a></h1>
 <p class="muted">{% if subject.part_kind == 'okruh' %}Okruhy{% else %}Karty{% endif %} — klikni pro otázky.</p>
 
 <ul class="cardlist">

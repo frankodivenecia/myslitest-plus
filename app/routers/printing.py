@@ -100,3 +100,17 @@ def print_hard(request: Request, db: Session = Depends(get_db)):
         cur["rows"].append({"code": q.code, "qid": q.qid, "text": q.text,
                             "answer_html": _render_md(st[q.id].answer_md)})
     return _render(request, "Těžké otázky — tvoje odpovědi", groups)
+
+@router.get("/print/cards/{slug}")
+def print_cards(slug: str, request: Request, db: Session = Depends(get_db)):
+    """Mřížka karet — A4 na šířku, 4 karty na stránku vedle sebe."""
+    uid = current_user(request)["id"]
+    s = db.query(Subject).filter_by(slug=slug).one_or_none()
+    if not s:
+        return RedirectResponse("/print", status_code=303)
+    boxes = [{"heading": _label(s, c), "rows": _rows(db, uid, c.questions)} for c in s.cards]
+    pages = [boxes[i:i + 4] for i in range(0, len(boxes), 4)]
+    return templates.TemplateResponse(
+        request, "print_cards.html",
+        {"doc_title": f"{s.roman} · {s.title} — karty", "pages": pages})
+
